@@ -56,6 +56,19 @@
   </provides>
 
   <releases>
+    <release version="0.9.97" date="2020-11-12">
+      <description>
+        1. Add vlang and forth code syntax highlight.
+        2. Add “Properties” in context menu for file on Windows.
+        3. Improve markdown parse logic.
+        4. Improve UI and built-in themes.
+        5. Improve compatibility with IMEs.
+        6. Fix print may popup no printer available error.
+        7. Fix open link with escaped urls.
+        8. Fix some mermaid dialog bugs.
+        9. Other bug fix.
+      </description>
+    </release>
     <release version="0.9.96" date="2020-09-14">
       <description>
         <p>release-0.9.96</p>

@@ -1,4 +1,4 @@
 *.flatpak
 /.flatpak-builder
 /build-dir
-/test-repo-typora
+/repo.io.typora.Typora
