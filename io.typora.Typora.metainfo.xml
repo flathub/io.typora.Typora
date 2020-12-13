@@ -56,7 +56,12 @@
   </provides>
 
   <releases>
-    <release version="0.9.97" date="2020-11-12">
+    <release version="0.9.98" date="2020-12-13">
+      <description>
+        1. Fix regression bugs.
+      </description>
+    </release>
+    <release version="0.9.97" date="2020-12-12">
       <description>
         1. Add vlang and forth code syntax highlight.
         2. Add “Properties” in context menu for file on Windows.
