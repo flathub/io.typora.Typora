@@ -11,6 +11,8 @@
     "--device=dri",
     "--filesystem=host",
     "--share=ipc",
+    "--share=network",
+    "--socket=pulseaudio",
     "--socket=x11"
   ],
   "modules": [
