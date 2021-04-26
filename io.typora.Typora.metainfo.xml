@@ -56,6 +56,24 @@
   </provides>
 
   <releases>
+    <release version="0.10.3" date="2021-04-26">
+      <description>
+         1. New Typora Icon.
+         2. Improve UI for context menu and fences code language auto complete.
+         3. Add Export options and enhance export functionality.
+         4. Support header, footer and page option for PDF export.
+         5. Support outline sidebar, custom contents and theme for HTML export.
+         6. Support custom font size and width for image export.
+         7. Support table with one row.
+         8. Auto adding table rows on tab key.
+         9. Add Hebrew interface by [Alon](https://github.com/RealA10N).
+        10. Support configs for diagrams.
+        11. Support anchor links to title with duplicated names.
+        12. Support installation without admin privilege.
+        13. Rename “Move to Trash” to “Delete” for easier understanding.
+        14. Other bugs fix and stability improvements.
+      </description>
+    </release>
     <release version="0.9.98" date="2020-12-13">
       <description>
         1. Fix regression bugs.

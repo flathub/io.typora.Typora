@@ -4,9 +4,9 @@
   "separate-locales": false,
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "20.08",
-  "sdk": "org.freedesktop.Sdk",
   "base": "org.electronjs.Electron2.BaseApp",
   "base-version": "20.08",
+  "sdk": "org.freedesktop.Sdk",
   "finish-args": [
     "--device=dri",
     "--filesystem=host",
@@ -43,8 +43,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://typora.io/linux/Typora-linux-x64-0.9.98.tar.gz",
-          "sha256": "5cf1f2b171b964d64f34fb50dfe0575ac87887dfbc79d7a6affa1f9b06973e78"
+          "url": "https://typora.io/linux/Typora-linux-x64-0.10.3.tar.gz",
+          "sha256": "4676da14beab195f16a3292d6bb0b0715dcf5b4785304e984e93e9b4727fe2a9"
         },
         {
           "type": "script",
