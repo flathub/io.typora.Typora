@@ -56,6 +56,17 @@
   </provides>
 
   <releases>
+    <release version="0.10.6" date="2021-04-28">
+      <description>
+        1. Fix print error.
+        2. Fix image auto upload.
+      </description>
+    </release>
+    <release version="0.10.4" date="2021-04-28">
+      <description>
+        1. Fix cursor in inline math.
+      </description>
+    </release>
     <release version="0.10.3" date="2021-04-26">
       <description>
          1. New Typora Icon.
