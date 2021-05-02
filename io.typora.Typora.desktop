@@ -2,7 +2,7 @@
 Name=Typora
 Comment=A minimal Markdown reading & writing app. Change Log: (https://typora.io/windows/dev_release.html)
 GenericName=Markdown Editor
-Exec=typora '%U'
+Exec=typora %U
 Icon=io.typora.Typora
 Type=Application
 StartupNotify=true
@@ -12,4 +12,4 @@ Actions=new-window
 
 [Desktop Action new-window]
 Name=Open a new Window
-Exec=typora
+Exec=typora %U

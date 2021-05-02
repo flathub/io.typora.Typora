@@ -56,6 +56,12 @@
   </provides>
 
   <releases>
+    <release version="0.10.7" date="2021-05-02">
+      <description>
+        1. Fix small UI issues.
+        2. Fix text editing bug which may remove texts after link.
+      </description>
+    </release>
     <release version="0.10.6" date="2021-04-28">
       <description>
         1. Fix print error.
