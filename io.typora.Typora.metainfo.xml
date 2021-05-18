@@ -56,6 +56,15 @@
   </provides>
 
   <releases>
+    <release version="0.10.10" date="2021-05-16">
+      <description>
+        1. Fix issue about emoji autocomplete.
+        2. Fix rename issue on file sidebar.
+        3. Keep final newline if original file end with linebreak.
+        4. Fix the issue that may cause Typora window not showing up.
+        5. Other small fix.
+      </description>
+    </release>
     <release version="0.10.9" date="2021-05-09">
       <description>
         1. Fix bug for editing issue after images.
