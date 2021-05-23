@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+    <release version="0.10.11" date="2021-05-23">
+      <description>
+        1. Fix issue about save file dialog.
+      </description>
+    </release>
     <release version="0.10.10" date="2021-05-16">
       <description>
         1. Fix issue about emoji autocomplete.
