@@ -51,7 +51,7 @@
           "type": "script",
           "dest-filename": "typora",
           "commands": [
-            "exec zypak-wrapper /app/typora/Typora $@"
+            "exec zypak-wrapper /app/typora/Typora \"$@\""
           ]
         },
         {
