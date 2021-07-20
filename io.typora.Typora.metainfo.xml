@@ -56,6 +56,25 @@
   </provides>
 
   <releases>
+    <release version="0.11.0" date="2021-07-20">
+      <description>
+        1. Add shortcut key info on context menu.
+        2. Fix background on Windows start menu tile.
+        3. On Windows unibody style, users can right click on menu icon or use `Alt` + `(E)dit`, `Alt` + `(P)aragraph`, `Alt` + `F(o)rmat`, etc key combinations to open main menu.
+        4. Add menu item to control whether to append final new line or not.
+        5. YAML Front matters now supports ending with three dots (…),
+        6. Code Fences now is better GFM / CommonMark compatible. You can put extra `` ` or `~` to warp code block which contains ``` or ~~~.
+        7. Typora now follows GFM / CommonMark to parse `1)` as ordered list.
+        8. Use GFM compatible tables, leading or trailing pipes are optional in table rows.
+        9. Export will now display warning if it succeeded but with warnings.
+        10. Upgrade to MathJax 3.2 for math faster and better math rendering.
+        11. Support TeX comands from cases, centernot, colortbl, empheq, gensymb, mathtools, textcomp, upgreek, braket, physics, xypic packages.
+        12. Upgrade flowchart version, which supports named branches.
+        13. Add Romanian interface.
+        14. Support undo when converting smart quotes / dashes when input.
+        15. Other bugs fix and improvements.
+      </description>
+    </release>
     <release version="0.10.11" date="2021-05-23">
       <description>
         1. Fix issue about save file dialog.
