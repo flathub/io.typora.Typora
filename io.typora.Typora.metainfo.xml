@@ -56,6 +56,12 @@
   </provides>
 
   <releases>
+    <release version="0.11.1" date="2021-07-23">
+      <description>
+        1. Added option to auto apply displaylines environment in math to support line break using \\.
+        2. Fix some bugs.
+      </description>
+    </release>
     <release version="0.11.0" date="2021-07-20">
       <description>
         1. Add shortcut key info on context menu.
