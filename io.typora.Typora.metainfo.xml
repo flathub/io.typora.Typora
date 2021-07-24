@@ -56,6 +56,13 @@
   </provides>
 
   <releases>
+    <release version="0.11.2" date="2021-07-24">
+      <description>
+        1. Fix issue about math editing.
+        2. Fix issue about copying image.
+        3. Fix issue about check updates.
+      </description>
+    </release>
     <release version="0.11.1" date="2021-07-23">
       <description>
         1. Added option to auto apply displaylines environment in math to support line break using \\.
