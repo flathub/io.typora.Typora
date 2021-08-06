@@ -1,3 +1,4 @@
 {
-  "only-arches": ["x86_64"]
+  "only-arches": ["x86_64"],
+  "end-of-life": "The application has been moved from flathub-beta into flathub, please use the stable version. This beta won't receive any more updates."
 }
