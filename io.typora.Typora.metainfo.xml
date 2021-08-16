@@ -56,6 +56,18 @@
   </provides>
 
   <releases>
+    <release version="0.11.5" date="2021-08-16">
+      <description>
+        1. Fix sidebar keeps loading on Linux.
+        2. Fix editing bugs on links and math.
+        3. Fix math style in exported PDF.
+        4. Fix context menu not working on source code mode.
+        5. Add nim, solidity code syntax support.
+        6. Fix bug that cannot embed YouTube videos.
+        7. Fix copy content not copy images as configured.
+        8. Other bug fix.
+      </description>
+    </release>
     <release version="0.11.2" date="2021-07-24">
       <description>
         1. Fix issue about math editing.
