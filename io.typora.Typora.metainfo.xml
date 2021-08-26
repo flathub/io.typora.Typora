@@ -56,6 +56,13 @@
   </provides>
 
   <releases>
+    <release version="0.11.6" date="2021-08-26">
+      <description>
+        1. Fix issue on save.
+        2. Fix render issue on mermaid diagram.
+        3. Fix parsing issues about strong and emphasis.
+      </description>
+    </release>
     <release version="0.11.5" date="2021-08-16">
       <description>
         1. Fix sidebar keeps loading on Linux.
