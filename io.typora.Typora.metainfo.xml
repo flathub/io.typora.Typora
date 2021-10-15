@@ -56,6 +56,17 @@
   </provides>
 
   <releases>
+    <release version="0.11.12" date="2021-10-15">
+      <description>
+        1. Improve inline code parse rule.
+        2. Reduce lag when using IME.
+        3. Fix upload all images fail when image path are escaped.
+        4. Fix connections to resources from some https websites will fail.
+        5. Update i18n translations for Russian, Hungarian, Chinese and Polish.
+        6. Add option to allow physics package to redefine some TeX commands.
+        7. Other bug fix and improvements.
+      </description>
+    </release>
     <release version="0.11.8" date="2021-08-31">
       <description>
         1. Fix strong not rendered in some cases.
