@@ -58,14 +58,14 @@
   <releases>
     <release version="0.11.18" date="2021-11-17">
       <description>
-      1. Add warnings when user try to edit file from backup location.
-      2. Line break should be rendered as whitespace when ignore line break is enabled.
-      3. Fix new file in tile tree will result to duplicate files.
-      4. Fix bug that table with tabs cannot be correct parsed.
-      5. Fix inline math preview issue.
-      6. Fix bug that users cannot jump from some internal links.
-      7. Fix some cursor issue.
-      8. Fix Greek language spellcheck on older Windows and Linux.
+        1. Add warnings when user try to edit file from backup location.
+        2. Line break should be rendered as whitespace when ignore line break is enabled.
+        3. Fix new file in tile tree will result to duplicate files.
+        4. Fix bug that table with tabs cannot be correct parsed.
+        5. Fix inline math preview issue.
+        6. Fix bug that users cannot jump from some internal links.
+        7. Fix some cursor issue.
+        8. Fix Greek language spellcheck on older Windows and Linux.
       </description>
     </release>
     <release version="0.11.16" date="2021-11-07">
