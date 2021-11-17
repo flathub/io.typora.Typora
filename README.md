@@ -12,4 +12,5 @@
 - [2021-10-28](https://typora.io/linux/Typora-linux-x64-0.11.14.tar.gz)
 - [2021-11-06](https://typora.io/linux/Typora-linux-x64-0.11.15.tar.gz)
 - [2021-11-07](https://typora.io/linux/Typora-linux-x64-0.11.16.tar.gz)
+- [2021-11-17](https://typora.io/linux/Typora-linux-x64-0.11.18.tar.gz)
 - [latest](https://typora.io/linux/Typora-linux-x64.tar.gz)
