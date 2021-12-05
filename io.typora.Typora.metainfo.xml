@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+    <release version="1.0.3" date="2021-12-01">
+      <description>
+        1. Add option to allow connect to activation server in China.
+      </description>
+    </release>
     <release version="1.0.2" date="2021-11-27">
       <description>
         1. Fix activation process on some older macOS version.

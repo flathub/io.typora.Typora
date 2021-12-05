@@ -44,7 +44,7 @@
       "sources": [
         {
           "type": "archive",
-          "path": "Typora-linux-x64-1.0.2.tar.gz"
+          "path": "Typora-linux-x64-1.0.3.tar.gz"
         },
         {
           "type": "script",
