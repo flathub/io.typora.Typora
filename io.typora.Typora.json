@@ -14,6 +14,7 @@
     "--share=network",
     "--socket=pulseaudio",
     "--socket=x11",
+    "--socket=wayland",
     "--talk-name=com.canonical.AppMenu.Registrar"
   ],
   "modules": [
@@ -50,7 +51,11 @@
           "type": "script",
           "dest-filename": "typora",
           "commands": [
-            "exec zypak-wrapper /app/typora/Typora \"$@\""
+            "if [ ! -e $XDG_RUNTIME_DIR/$WAYLAND_DISPLAY ]; then",
+            "exec zypak-wrapper /app/typora/Typora \"$@\"",
+            "else",
+            "exec zypak-wrapper /app/typora/Typora --enable-features=UseOzonePlatform -ozone-platform=wayland \"$@\"",
+            "fi"
           ]
         },
         {
