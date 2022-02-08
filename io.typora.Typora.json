@@ -52,7 +52,7 @@
           "type": "script",
           "dest-filename": "typora",
           "commands": [
-            "if [ ! $XDG_SESSION_TYPE = \"wayland\" ]; then",
+            "if [ ! -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then",
             "exec zypak-wrapper /app/typora/Typora \"$@\"",
             "else",
             "exec zypak-wrapper /app/typora/Typora --enable-features=UseOzonePlatform -ozone-platform=wayland \"$@\"",
