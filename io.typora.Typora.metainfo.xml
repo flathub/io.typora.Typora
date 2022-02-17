@@ -56,6 +56,35 @@
   </provides>
 
   <releases>
+    <release version="1.1.2" date="2022-02-17">
+      <description>
+        New / Improvements
+          Add Malay language support.
+          Add Slovenian language support.
+          Fix typo and update translations in other languages.
+          Allow create file when open non-exist file via command line.
+          Allow create file when open target link that does not have existing file.
+          Allow open other files' anchor position directly via file link.
+          More compact context menu under Windows / Linux.
+          Support copy / cut while line when nothing is selected.
+          Add option to disable or enable physics package.
+          Allow pasting markdown with Command-Option-Shift-V on macOS.
+          Support offline activation and provide web UI to manage used license code.
+          Sign Windows executables and installers.
+          Support default / theme font size for exported image.
+          Ensure downloaded image has image file extension.
+          Support loading local image files with user append hashes.
+        Fix
+          Fix security issue which may cause XSS.
+          Fix custom font size for exported image.
+          Fix multiple BOM be added when saving files with BOM header.
+          Fix copy as MathML not working for math block.
+          Fix math auto numbering get wrongly numbered labels.
+          Fix file tree UI under smaller customer font size.
+          Fix always on top cannot be turned off under macOS.
+          Fix image corrupted if your Typora is zoomed.
+      </description>
+    </release>
     <release version="1.0.4" date="2022-01-11">
       <description>
         1. Fix check update failure.
