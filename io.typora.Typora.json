@@ -46,8 +46,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.typora.io/linux/Typora-linux-x64-1.1.4.tar.gz",
-          "sha256": "3a2f4e7dd91e1beb43dd1bc088e1f7c32855dc64f8888288f5260e8432994368"
+          "url": "https://download.typora.io/linux/Typora-linux-x64-1.1.5.tar.gz",
+          "sha256": "b8db7a9c1d4dccc3c22a0a7e41fe61f470b19f6324464b37bf315e382da53b6e"
         },
         {
           "type": "script",

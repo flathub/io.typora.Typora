@@ -56,6 +56,12 @@
   </provides>
 
   <releases>
+    <release version="1.1.5" date="2022-02-21">
+      <description>
+        Fix issues when canceling a saving process.
+        Improve undo when auto save is enabled.
+      </description>
+    </release>
     <release version="1.1.4" date="2022-02-20">
       <description>
         Fix display issue under languages including Indonesian, French, Catalan and Traditional Chinese.
