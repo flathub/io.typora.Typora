@@ -56,6 +56,12 @@
   </provides>
 
   <releases>
+    <release version="1.2.4" date="2022-03-27">
+      <description>
+        Fix unnecessary scroll for files with large set of images (macOS).
+        Fix sometimes image load fail when root path is set.
+      </description>
+    </release>
     <release version="1.2.3" date="2022-03-23">
       <description>
         New / Improvements
