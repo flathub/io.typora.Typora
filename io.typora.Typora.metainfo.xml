@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+  <release version="1.4.5" date="2022-09-07">
+      <description>
+        Fix save file dialog not show for snap and flathub package.
+      </description>
+    </release>
     <release version="1.4.4" date="2022-09-05">
       <description>
         Fix scroll for code block not displayed in some cases.
