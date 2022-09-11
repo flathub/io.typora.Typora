@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Typora
-Comment=A minimal Markdown reading & writing app. Change Log: (https://typora.io/windows/dev_release.html)
+Comment=A minimal Markdown reading & writing app. Change Log: (https://typora.io/releases/all)
 GenericName=Markdown Editor
 Exec=typora %U
 Icon=io.typora.Typora
