@@ -56,7 +56,13 @@
   </provides>
 
   <releases>
-  <release version="1.4.6" date="2022-09-11">
+    <release version="1.4.8" date="2022-10-11">
+      <description>
+        Fix open Folder.
+        Fix issues about page break for PDF export.
+      </description>
+    </release>
+    <release version="1.4.6" date="2022-09-11">
       <description>
         Fix save file dialog not show for snap and flathub package.
       </description>
