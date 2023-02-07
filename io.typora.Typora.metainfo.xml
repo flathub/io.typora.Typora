@@ -56,6 +56,59 @@
   </provides>
 
   <releases>
+    <release version="1.5.5" date="2023-02-06">
+      <description>
+        Code Block / Source Code Mode
+          Add yara code syntax highlight.
+          Add svelte code syntax highlight.
+          Improve syntax highlight for SQL.
+          Fix input in language input of code blocks when using IME.
+          Fix cut not save data to clipboard when on text is selected but line wise copy cut is enabled.
+          Shift + Tab will outdent selected contents in code block and source code mode.
+          Recognize the end of code blocks in markdown source code mode.
+          Improve syntax highlight of links in markdown source code mode.
+          Fix continuous list when press Enter key in source code mode.
+
+        Code Block / Source Code Mode
+          Upgrade mermaid version to 9.2 which brings bug fix and Mindmaps
+
+        UI / UX
+          Change some button labels.
+          Images supports float in custom CSS.
+          Fix wrong scroll on code blocks when clicking global search result.
+          Fix word break for code in outlines.
+          In list list view, #test in file summary will be treated as normal text or heading texts, depends on the option of “Strict Mode” for markdown parsing rules in preferences panel.
+          Fix global search not correctly highlight text in table.
+          Fix create new tab may cause Typora window loose focus on macOS
+
+        Import / Export
+          Image export now support quantity options.
+          Use local font, instead of remote font when exporting PDF.
+          Highlight is supported and converted when export to LaTeX.
+          Improve spacing in lists when export to PDF or images.
+          Follow Pandoc’s way to export task list when target is docx, out, or rtf.
+          Generate more readable title for Epub export.
+
+        Editing
+          Allow open local file link contains “#” in file path.
+          Improve paste results from Google Docs.
+          HTML entities are now case sensitive.
+
+        Windows
+          This version supports Windows 7 again. Now Typora subscribe to different update channel on Windows 7 and newer Windows versions.
+          Link url starts like C:/ will also be recognized as absolute path, in previous versions, only path like D:\ will be treated as absolute url on Windows.
+          Better restore icon for unibody style.
+          Fix loading images from WSL path and net drivers.
+
+        I18n
+          Add new UI language: Norwegian
+          Update language translation of Slovenian, Vietnamese, Chinese.
+
+        Others
+          Update description message for deb package.
+          Other bug fix.
+      </description>
+    </release>
     <release version="1.4.8" date="2022-10-11">
       <description>
         Fix open Folder.
