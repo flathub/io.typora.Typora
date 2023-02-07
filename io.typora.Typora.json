@@ -27,8 +27,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-linux-amd64.tar.gz",
-          "sha256": "9d55c7afb6a244e8a615451ed9cb02e6a6f187ad4d169c6d5a123fa74adb4830"
+          "url": "https://github.com/jgm/pandoc/releases/download/3.0.1/pandoc-3.0.1-linux-amd64.tar.gz",
+          "sha256": "b8b0051a3c27ab5802bb2a091c8dd5cdb6588ce7356a6d5c4e64fbf02225da04"
 
         }
       ]
@@ -46,8 +46,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.typora.io/linux/Typora-linux-x64-1.4.8.tar.gz",
-          "sha256": "99df8dbe021ff05cdb13cc5437eeb3088e0fcc181c3be4ae83b68802fce4ffc8"
+          "url": "https://download.typora.io/linux/Typora-linux-x64-1.5.5.tar.gz",
+          "sha256": "8b0c4e10cbcb9f510a66ab7d370605328d602a130999aa7cf6324080ca8adfe7"
         },
         {
           "type": "script",
