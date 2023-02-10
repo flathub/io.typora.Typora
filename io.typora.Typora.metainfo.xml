@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+    <release version="1.5.6" date="2023-02-09">
+      <description>
+        Small bug fix.
+      </description>
+    </release>
     <release version="1.5.5" date="2023-02-06">
       <description>
         Code Block / Source Code Mode
