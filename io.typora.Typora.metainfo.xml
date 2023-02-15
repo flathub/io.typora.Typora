@@ -56,6 +56,14 @@
   </provides>
 
   <releases>
+    <release version="1.5.8" date="2023-02-15">
+      <description>
+        Fix the behavior of opening folder in Typora.
+        Fix create new file in file tree.
+        Fix footer and header for exported PDF.
+        Other bug fix.
+      </description>
+    </release>
     <release version="1.5.6" date="2023-02-09">
       <description>
         Small bug fix.
