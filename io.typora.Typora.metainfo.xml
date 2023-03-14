@@ -56,6 +56,16 @@
   </provides>
 
   <releases>
+    <release version="1.5.9" date="2023-03-14">
+      <description>
+        Add option to switch Shift+Tab behavior between outdent and auto indent inside code blocks.
+        Add menu and context menu to copy all code contents.
+        Add menu and context menu to auto indent code contents.
+        Fix sort in file tree not saved.
+        Fix compatibility issue with Pandoc 3.0
+        Other bug fixes.
+      </description>
+    </release>
     <release version="1.5.8" date="2023-02-15">
       <description>
         Fix the behavior of opening folder in Typora.
