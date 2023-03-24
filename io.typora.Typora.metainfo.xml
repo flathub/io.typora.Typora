@@ -56,6 +56,16 @@
   </provides>
 
   <releases>
+    <release version="1.5.10" date="2023-03-24">
+      <description>
+        Fix selection range after insert image.
+        Fix cursor when typing inside styled links.
+        Fix find again after switch docs.
+        Fix use command line typora aaa.md when aaa.md does not exists.
+        Fix garbled path under open recent menu.
+        Fix PDF export contains page break div.
+      </description>
+    </release>
     <release version="1.5.9" date="2023-03-14">
       <description>
         Add option to switch Shift+Tab behavior between outdent and auto indent inside code blocks.
