@@ -28,8 +28,13 @@
         {
           "type": "archive",
           "url": "https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-linux-amd64.tar.gz",
-          "sha256": "52b25f0115517e32047a06d821e63729108027bd06d9605fe8eac0fa83e0bf81"
-
+          "sha256": "52b25f0115517e32047a06d821e63729108027bd06d9605fe8eac0fa83e0bf81",
+          "x-checker-data": {
+            "type": "json",
+            "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
+            "version-query": ".tag_name",
+            "url-query": ".assets[] | select(.name==\"pandoc-\" + $version + \"-linux-amd64.tar.gz\") | .browser_download_url"
+          }
         }
       ]
     },
