@@ -1,79 +1,79 @@
 {
-  "id": "io.typora.Typora",
-  "command": "typora",
-  "separate-locales": false,
-  "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
-  "base": "org.electronjs.Electron2.BaseApp",
-  "base-version": "22.08",
-  "sdk": "org.freedesktop.Sdk",
-  "finish-args": [
-    "--device=dri",
-    "--filesystem=host",
-    "--share=ipc",
-    "--share=network",
-    "--socket=pulseaudio",
-    "--socket=x11",
-    "--socket=wayland",
-    "--talk-name=com.canonical.AppMenu.Registrar"
-  ],
-  "modules": [
-    {
-      "name": "pandoc",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm755 bin/pandoc /app/bin/pandoc"
-      ],
-      "sources": [
+    "id": "io.typora.Typora",
+    "command": "typora",
+    "separate-locales": false,
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "22.08",
+    "base": "org.electronjs.Electron2.BaseApp",
+    "base-version": "22.08",
+    "sdk": "org.freedesktop.Sdk",
+    "finish-args": [
+        "--device=dri",
+        "--filesystem=host",
+        "--share=ipc",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=x11",
+        "--socket=wayland",
+        "--talk-name=com.canonical.AppMenu.Registrar"
+    ],
+    "modules": [
         {
-          "type": "archive",
-          "url": "https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-linux-amd64.tar.gz",
-          "sha256": "52b25f0115517e32047a06d821e63729108027bd06d9605fe8eac0fa83e0bf81",
-          "x-checker-data": {
-            "type": "json",
-            "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
-            "version-query": ".tag_name",
-            "url-query": ".assets[] | select(.name==\"pandoc-\" + $version + \"-linux-amd64.tar.gz\") | .browser_download_url"
-          }
+            "name": "pandoc",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm755 bin/pandoc /app/bin/pandoc"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.2/pandoc-3.1.2-linux-amd64.tar.gz",
+                    "sha256": "4e1c607f7e4e9243fa1e1f5b208cd4f1d3f6fd055d5d8c39ba0cdc38644e1c35",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"pandoc-\" + $version + \"-linux-amd64.tar.gz\") | .browser_download_url"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "typora",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv Typora-linux-x64 /app/typora",
+                "install -Dm755 typora /app/bin/typora",
+                "install -Dm644 io.typora.Typora.desktop /app/share/applications/io.typora.Typora.desktop",
+                "install -Dm644 io.typora.Typora.png /app/share/icons/io.typora.Typora.png",
+                "install -Dm644 io.typora.Typora.metainfo.xml /app/share/metainfo/io.typora.Typora.metainfo.xml"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.typora.io/linux/Typora-linux-x64-1.5.10.tar.gz",
+                    "sha256": "32d4fc58a9017750bbbbcd0a3ef8af698ff95f0c5125ffb47e7855c48d3cf844"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "typora",
+                    "commands": [
+                        "exec zypak-wrapper /app/typora/Typora \"$@\""
+                    ]
+                },
+                {
+                    "type": "file",
+                    "path": "io.typora.Typora.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "io.typora.Typora.png"
+                },
+                {
+                    "type": "file",
+                    "path": "io.typora.Typora.metainfo.xml"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "typora",
-      "buildsystem": "simple",
-      "build-commands": [
-        "mv Typora-linux-x64 /app/typora",
-        "install -Dm755 typora /app/bin/typora",
-        "install -Dm644 io.typora.Typora.desktop /app/share/applications/io.typora.Typora.desktop",
-        "install -Dm644 io.typora.Typora.png /app/share/icons/io.typora.Typora.png",
-        "install -Dm644 io.typora.Typora.metainfo.xml /app/share/metainfo/io.typora.Typora.metainfo.xml"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.typora.io/linux/Typora-linux-x64-1.5.10.tar.gz",
-          "sha256": "32d4fc58a9017750bbbbcd0a3ef8af698ff95f0c5125ffb47e7855c48d3cf844"
-        },
-        {
-          "type": "script",
-          "dest-filename": "typora",
-          "commands": [
-            "exec zypak-wrapper /app/typora/Typora \"$@\""
-          ]
-        },
-        {
-          "type": "file",
-          "path": "io.typora.Typora.desktop"
-        },
-        {
-          "type": "file",
-          "path": "io.typora.Typora.png"
-        },
-        {
-          "type": "file",
-          "path": "io.typora.Typora.metainfo.xml"
-        }
-      ]
-    }
-  ]
+    ]
 }
