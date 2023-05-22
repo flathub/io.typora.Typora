@@ -56,6 +56,37 @@
   </provides>
 
   <releases>
+    <release version="1.6.6" date="2023-05-22">
+      <description>
+        Breaking Changes
+          The Windows version no longer support Windows 7, 8, 8.1.
+
+        Better Preferences Panel
+          Add "Files" section and retune Preferences Panel.
+          Add options to set default file extension.
+          Add options to control behavior when drop file or folder into Typora.
+          Add options to disable auto link.
+          Add options to set default code language when inserting code blocks.
+          Add options to auto apply last used code language when inserting code blocks.
+
+        Other New Features
+          Support Timeline for MermaidJS diagrams.
+          Add Thai Language UI.
+          Add PicList as an Image Uploader.
+          Add PEG.js syntax highlight support.
+
+        Other Improvements
+          Fix CVE-2023-2317.
+          Fix CVE-2023-2316.
+          Avoid using google font mirrors in exported HTML, now official google font CDN is used.
+          using keyword["keyword"] sometimes causes node not rendered in Mermaid diagram.
+          color of typic package not readable in dark themes.
+          setting inline mermaid configs may also affect other mermaid blocks.
+          tasks status cannot be changed from menu bar when task list is under nested lists.
+          math block is always auto numbered in exported docx and related setting is ignored.
+          [Spec change] Typora now allow users to escape : mark to avoid input unwanted emoji codes.
+      </description>
+    </release>
     <release version="1.5.10" date="2023-03-24">
       <description>
         Fix selection range after insert image.
