@@ -22,7 +22,7 @@
             "name": "pandoc",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm755 bin/pandoc /app/bin/pandoc"
+                "install -Dm755 bin/pandoc ${FLATPAK_DEST}/bin/pandoc"
             ],
             "sources": [
                 {
@@ -42,11 +42,11 @@
             "name": "typora",
             "buildsystem": "simple",
             "build-commands": [
-                "mv Typora-linux-x64 /app/typora",
-                "install -Dm755 typora /app/bin/typora",
-                "install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
-                "install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop",
-                "install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png"
+                "mv Typora-linux-x64 ${FLATPAK_DEST}/typora",
+                "install -Dm755 typora ${FLATPAK_DEST}/bin/typora",
+                "install -Dm644 ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.appdata.xml",
+                "install -Dm644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop",
+                "install -Dm644 ${FLATPAK_ID}.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png"
             ],
             "sources": [
                 {
@@ -71,7 +71,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "io.typora.Typora.metainfo.xml"
+                    "path": "io.typora.Typora.appdata.xml"
                 }
             ]
         }
