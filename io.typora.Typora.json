@@ -44,9 +44,12 @@
             "build-commands": [
                 "mv Typora-linux-x64 /app/typora",
                 "install -Dm755 typora /app/bin/typora",
+                "install -Dm644 io.typora.Typora.desktop /app/share/applications/io.typora.Typora.desktop",
                 "install -Dm644 io.typora.Typora.desktop /app/usr/share/applications/io.typora.Typora.desktop",
-                "install -Dm644 io.typora.Typora.png /app/usr/share/icons/io.typora.Typora.png",
-                "install -Dm644 io.typora.Typora.metainfo.xml /app/usr/share/metainfo/io.typora.Typora.metainfo.xml"
+                "install -Dm644 io.typora.Typora.metainfo.xml /app/share/metainfo/io.typora.Typora.metainfo.xml",
+                "install -Dm644 io.typora.Typora.metainfo.xml /app/usr/share/metainfo/io.typora.Typora.metainfo.xml",
+                "install -Dm644 io.typora.Typora.png /app/share/icons/io.typora.Typora.png",
+                "install -Dm644 io.typora.Typora.png /app/usr/share/icons/io.typora.Typora.png"
             ],
             "sources": [
                 {
