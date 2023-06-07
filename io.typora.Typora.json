@@ -22,13 +22,13 @@
             "name": "pandoc",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm755 bin/pandoc /app/bin/pandoc"
+                "install -Dm755 bin/pandoc ${FLATPAK_DEST}/bin/pandoc"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.2/pandoc-3.1.2-linux-amd64.tar.gz",
-                    "sha256": "4e1c607f7e4e9243fa1e1f5b208cd4f1d3f6fd055d5d8c39ba0cdc38644e1c35",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.3/pandoc-3.1.3-linux-amd64.tar.gz",
+                    "sha256": "74bc434908e4d858b3edbfd6271d2e9e499477837e5df1d630df4e62f113803d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
@@ -42,11 +42,11 @@
             "name": "typora",
             "buildsystem": "simple",
             "build-commands": [
-                "mv Typora-linux-x64 /app/typora",
-                "install -Dm755 typora /app/bin/typora",
-                "install -Dm644 io.typora.Typora.desktop /app/share/applications/io.typora.Typora.desktop",
-                "install -Dm644 io.typora.Typora.png /app/share/icons/io.typora.Typora.png",
-                "install -Dm644 io.typora.Typora.metainfo.xml /app/share/metainfo/io.typora.Typora.metainfo.xml"
+                "mv Typora-linux-x64 ${FLATPAK_DEST}/typora",
+                "install -Dm755 typora ${FLATPAK_DEST}/bin/typora",
+                "install -Dm644 ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.appdata.xml",
+                "install -Dm644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop",
+                "install -Dm644 ${FLATPAK_ID}.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png"
             ],
             "sources": [
                 {
@@ -71,7 +71,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "io.typora.Typora.metainfo.xml"
+                    "path": "io.typora.Typora.appdata.xml"
                 }
             ]
         }
