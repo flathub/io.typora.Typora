@@ -27,8 +27,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.6.1/pandoc-3.1.6.1-linux-amd64.tar.gz",
-                    "sha256": "c18d5745ebd845c75e412ca3f7da24bdf99fab93c96899e224879d45804d221d",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.6.2/pandoc-3.1.6.2-linux-amd64.tar.gz",
+                    "sha256": "a9c84b765991891572b4b67525c184d501cabfc751e6de054c902bbc7b41ee50",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
