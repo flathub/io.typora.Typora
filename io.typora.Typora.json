@@ -27,9 +27,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "only-arches": ["x86_64"],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.6.2/pandoc-3.1.6.2-linux-amd64.tar.gz",
-                    "sha256": "a9c84b765991891572b4b67525c184d501cabfc751e6de054c902bbc7b41ee50",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.7/pandoc-3.1.7-linux-amd64.tar.gz",
+                    "sha256": "63237f1a333371cab324a8780dd13455386d68aa92b4289175611cfdad1f302c",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
@@ -39,9 +41,11 @@
                 },
                 {
                     "type": "archive",
-                    "only-arches": ["aarch64"],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.6.2/pandoc-3.1.6.2-linux-arm64.tar.gz",
-                    "sha256": "7a7702428d5fb348aad4090397283bcbcc5305117bdc74b8263731bd8f200644",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.7/pandoc-3.1.7-linux-arm64.tar.gz",
+                    "sha256": "5b957450853720511e00c2eaa05966309ea5923f693d7af601a944b8b2b3351f",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
@@ -64,13 +68,17 @@
             "sources": [
                 {
                     "type": "archive",
-                    "only-arches": ["x86_64"],
+                    "only-arches": [
+                        "x86_64"
+                    ],
                     "url": "https://download.typora.io/linux/Typora-linux-x64-1.6.6.tar.gz",
                     "sha256": "0478de203fbdfa96b1a813a275c9d74632377f0af10c44984ae7b8a4e812e3ff"
                 },
                 {
                     "type": "archive",
-                    "only-arches": ["aarch64"],
+                    "only-arches": [
+                        "aarch64"
+                    ],
                     "url": "https://download.typora.io/linux/Typora-linux-arm64-1.6.6.tar.gz",
                     "sha256": "8135c003ca14860a6f1073808ad65421b0e125bccf1c297279d874db8c0c182d"
                 },
