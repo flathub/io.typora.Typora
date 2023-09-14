@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+    <release version="1.7.4" date="2023-09-09">
+      <description>
+        Fix search in preferences panel.
+      </description>
+    </release>
     <release version="1.7.3" date="2023-09-06">
       <description>
         New
