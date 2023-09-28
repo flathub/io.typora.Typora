@@ -56,6 +56,12 @@
   </provides>
 
   <releases>
+    <release version="1.7.5" date="2023-09-21">
+      <description>
+        Fix security issues, including CVE-2023-4863.
+        Fix search in preferences panel.
+      </description>
+    </release>
     <release version="1.7.4" date="2023-09-09">
       <description>
         Fix search in preferences panel.
