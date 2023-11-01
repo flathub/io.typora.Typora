@@ -56,8 +56,15 @@
   </provides>
 
   <releases>
+    <release version="1.7.6" date="2023-11-01">
+      <description>
+        Fix "save as" logic on Windows / Linux.
+        Improve activation network for users in China mainland.
+      </description>
+    </release>
     <release version="1.7.5" date="2023-09-21">
       <description>
+        Fix code signing on macOS.
         Fix security issues, including CVE-2023-4863.
         Fix search in preferences panel.
       </description>
