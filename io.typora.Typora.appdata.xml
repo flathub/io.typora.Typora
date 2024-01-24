@@ -56,6 +56,11 @@
   </provides>
 
   <releases>
+    <release version="1.8.6" date="2024-01-24">
+      <description>
+        N/A
+      </description>
+    </release>
     <release version="1.8.5" date="2024-01-19">
       <description>
         New
