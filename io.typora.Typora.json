@@ -30,8 +30,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.12/pandoc-3.1.12-linux-amd64.tar.gz",
-                    "sha256": "e30d20cc3f9aefa117bf2183fe74cfc7cb043237d56eb63272b82bf76b537991",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-linux-amd64.tar.gz",
+                    "sha256": "40da725277f7617d045fc761b0375b3ba0990c5d03a908c207fed61b78e34986",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
@@ -44,8 +44,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.12/pandoc-3.1.12-linux-arm64.tar.gz",
-                    "sha256": "5e27952bee7ddc88e5629bf86252233b418abdf8f7f66c86c412805469afd560",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-linux-arm64.tar.gz",
+                    "sha256": "9032b273aec5a1050b2e5f724c8a9dcaf657540c68e44dc477ec9fc38aebc173",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
