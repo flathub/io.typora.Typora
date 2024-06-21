@@ -5,7 +5,9 @@
   <project_license>LicenseRef-proprietary=https://support.typora.io/License-Agreement/</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>A minimal Markdown reading &amp; writing app</summary>
-  <developer_name>Typora</developer_name>
+  <developer>
+    <name>Typora</name>
+  </developer>
   <description>
     <p>
       Typora gives you a seamless experience as both a reader and a writer. It removes the preview window, mode switcher, syntax symbols of markdown source code, and all other unnecessary distractions. Instead, it provides a real live preview feature to help you concentrate on the content itself.
@@ -48,14 +50,40 @@
   </screenshots>
 
   <url type="homepage">https://typora.io/</url>
-  <url type="bugtracker">http://support.typora.io/</url>
-  <url type="help">http://support.typora.io/</url>
+  <url type="bugtracker">https://support.typora.io/</url>
+  <url type="help">https://support.typora.io/</url>
 
   <provides>
     <binary>typora</binary>
   </provides>
 
   <releases>
+    <release version="1.9.3" date="2024-06-21">
+      <description>
+        New
+          Support gitlab style math code block.
+          Upgrade mermaid 10.9.1, Block Diagrams are now supported.
+
+        Improvements
+          Follow CommonMark rule to handle whitespace inside code.
+          Improve scroll performance, improve performance on macOS 14.
+          Shorten file path in open recent menu.
+          “Inspect Element” on macOS moved from context menu to Sfarai Develop menu.
+          New file on file tree no longer need confirm after input its filename.
+          Add structured text code syntax highlight.
+          Chapter levels can be configured for ePub export.
+          Update languages in Polish, Traditional Chinese, Slovenian, Czech and Norwegian Nynorsk.
+
+        Fix
+          Fix Javascript XSS on mermaid and math.
+          Fix anchor id when export.
+          Fix bookmark for exported PDF cannot be shown in Adobe Reader.
+          Fix some remote images cannot be loaded on macOS.
+          Fix “&amp;” not displayed for file path contains “&amp;” In “recent files” menu on Windows / Linux.
+          Fix “$” in code language name leads to a wrong string.
+          Other bug fix.
+      </description>
+    </release>
     <release version="1.8.9" date="2024-01-29">
       <description>
         Fix search in preferences panel.
