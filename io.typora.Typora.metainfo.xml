@@ -5,7 +5,7 @@
   <project_license>LicenseRef-proprietary=https://support.typora.io/License-Agreement/</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>A minimal Markdown reading &amp; writing app</summary>
-  <developer>
+  <developer id="io.typora">
     <name>Typora</name>
   </developer>
   <description>
