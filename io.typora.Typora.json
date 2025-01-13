@@ -30,8 +30,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.6.1/pandoc-3.6.1-linux-amd64.tar.gz",
-                    "sha256": "70241a3e8f0c2a30103d7954480025e547ed4f40b8cdce674cdf0be9f02bd5a3",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.6.2/pandoc-3.6.2-linux-amd64.tar.gz",
+                    "sha256": "f11b3f21549f23e3d5b99dfacb96560c04c2f76027edb787c4d6551849acf54a",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
@@ -44,8 +44,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://github.com/jgm/pandoc/releases/download/3.6.1/pandoc-3.6.1-linux-arm64.tar.gz",
-                    "sha256": "edd278c6f5937a5e9088f3d78fc039abc0d87348264ad3f7c51ba124bf580e8d",
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.6.2/pandoc-3.6.2-linux-arm64.tar.gz",
+                    "sha256": "eeaf4e6449794b7819de52c1ac6c55a1d4b49faa6edd3243d93013469f70ae00",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/jgm/pandoc/releases/latest",
