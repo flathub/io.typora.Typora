@@ -3,9 +3,9 @@
     "command": "typora",
     "separate-locales": false,
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "23.08",
+    "base-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -71,16 +71,16 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download.typora.io/linux/Typora-linux-x64-1.9.3.tar.gz",
-                    "sha256": "3594e6c00a52270f6f7e32e7f4b42bce5757f9efded6be5042573d7b45cdb03d"
+                    "url": "https://download.typora.io/linux/Typora-linux-x64-1.10.7.tar.gz",
+                    "sha256": "5ce63f62870ee725dc088a81c69c952ef5f001e33c7f4683594eb940567cf75b"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://download.typora.io/linux/Typora-linux-arm64-1.9.3.tar.gz",
-                    "sha256": "cd1942c6cca3f9f90ff14ff7cd3ddcbd8bff757411b353b21524e5761ed88375"
+                    "url": "https://download.typora.io/linux/Typora-linux-arm64-1.10.6.tar.gz",
+                    "sha256": "9ba6e6ede5e654b5b05109bd0784786f16aa0a668797daeb127d61f36598d51a"
                 },
                 {
                     "type": "script",
