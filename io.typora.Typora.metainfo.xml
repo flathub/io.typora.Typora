@@ -58,6 +58,17 @@
   </provides>
 
   <releases>
+    <release version="1.10.8" date="2025-02-27">
+      <description>
+        Support math expressions pasted from ChatGPT or other AI services.
+        Fix linux installer on older Debian system.
+        Fix pickiest not displayed in some languages.
+        Fix image not inserted after confirm dialog is shown.
+        Fix PDF export when custom margin is set.
+        Fix checkbox for Articles and File Tree under View menu is not exclusive.
+        Other Bug fixes.
+      </description>
+    </release>
     <release version="1.10.6" date="2025-02-20">
       <description>
         Improvements
