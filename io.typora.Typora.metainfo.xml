@@ -58,698 +58,862 @@
   </provides>
 
   <releases>
+    <release version="1.11.7" date="2025-08-31">
+      <description>
+        <p>
+          Fix generated markdown link when drop video files into Typora.
+        </p>
+      </description>
+    </release>
+    <release version="1.11.5" date="2025-08-19">
+      <description>
+        <p>
+          Fix print dialog not show for print operations on Windows / Linux.
+          Other bug fix.
+        </p>
+      </description>
+    </release>
+    <release version="1.11.4" date="2025-08-16">
+      <description>
+        <p>
+          New Features
+            LaTeX Delimiters Support. Added support for \(...\) (inline math) and \[...\] (block math).
+            Move Row/Paragraph Up/Down using Alt + ↑ / ↓ to move.
+            Mermaid v11.7 Update with new diagram types supported:
+              Radar Chart (radar-beta)
+              Treemap (treemap-beta)
+
+          Improvements
+            Exported HTML now includes Zenuml CSS only when needed (smaller file size).
+            Improved math compatibility when pasting from ChatGPT and AI tools.
+            Styles preserved when copying to WeChat Official Accounts.
+            “Copy without theme styling” now respects plain text setting.
+            Videos dropped into Typora now include the controls attribute.
+            Exported images no longer use referrerPolicy='no-referrer' by default.
+            Option added to disable emoji autocomplete when typing :.
+            Improve UI translations for Slovenian, Chinese, Dutch, Polish, Norwegian Nynorsk, French, Portuguese and Swedish.
+
+          Linux Updates
+          Replaced old APT key using SHA1 with a new secure one. Follow support.typora.io/What's-New-1.11/#linux for more details
+            Improved Wayland compatibility. Follow support.typora.io/What's-New-1.11/#wayland for more details
+
+          Bug Fixes
+            Fixed text clipping in PDF exports.
+            Fixed Mermaid code not working on macOS 12.
+            Fixed --- not rendering properly.
+            Prevented unwanted indentation when “Indent first line of paragraph” is enabled.
+            Fixed issue where GIFs from clipboard couldn’t be inserted.
+            Fixed list paste issues in some cases.
+            Fixed missing list bullets after 999+ items.
+            Fixed PDF export glitches on macOS.
+            Fixed issue where outline filter panel closed unexpectedly after scroll.
+            Zoom setting with mouse wheel now preserved.
+            Fixed rendering issues for certain code blocks with url mode.
+            Fix sort naturally in files sidebar.
+        </p>
+      </description>
+    </release>
     <release version="1.10.8" date="2025-02-27">
       <description>
-        Support math expressions pasted from ChatGPT or other AI services.
-        Fix linux installer on older Debian system.
-        Fix pickiest not displayed in some languages.
-        Fix image not inserted after confirm dialog is shown.
-        Fix PDF export when custom margin is set.
-        Fix checkbox for Articles and File Tree under View menu is not exclusive.
-        Other Bug fixes.
+        <p>
+          Support math expressions pasted from ChatGPT or other AI services.
+          Fix linux installer on older Debian system.
+          Fix pickiest not displayed in some languages.
+          Fix image not inserted after confirm dialog is shown.
+          Fix PDF export when custom margin is set.
+          Fix checkbox for Articles and File Tree under View menu is not exclusive.
+          Other Bug fixes.
+        </p>
       </description>
     </release>
     <release version="1.10.6" date="2025-02-20">
       <description>
-        Improvements
-          Mermaid is now upgrade to 11.4, with new diagrams including:
-            Packet Diagram
-            Kanban Diagram
-            Architecture Diagrams
-          Update translations for Danish, Hindi and Vietnamese.
-          Better PDF export on Windows / Linux: Able to export to PDF with dark themes and keep the background.
-          Toggle alert from View menu now follows the same logic as blockquote, which means you can select a range of paragraph and changes them into Github Alert from Paragraph → Alert from menubar.
-          Add gas syntax highlight, in previous version, gas will be treated as alias of assembly incorrectly.
-          Add url syntax highlight.
-          The image uploader option, piclist, is applied on all languages.
-          Fix syntax switch for images failed in some cases.
-          Allow users to drag-and-drop / insert images with jiff extension.
-          Do not escape image url with http protocol.
+        <p>
+          Improvements
+            Mermaid is now upgrade to 11.4, with new diagrams including:
+              Packet Diagram
+              Kanban Diagram
+              Architecture Diagrams
+            Update translations for Danish, Hindi and Vietnamese.
+            Better PDF export on Windows / Linux: Able to export to PDF with dark themes and keep the background.
+            Toggle alert from View menu now follows the same logic as blockquote, which means you can select a range of paragraph and changes them into Github Alert from Paragraph → Alert from menubar.
+            Add gas syntax highlight, in previous version, gas will be treated as alias of assembly incorrectly.
+            Add url syntax highlight.
+            The image uploader option, piclist, is applied on all languages.
+            Fix syntax switch for images failed in some cases.
+            Allow users to drag-and-drop / insert images with jiff extension.
+            Do not escape image url with http protocol.
 
-        Fix
-          Fix window fullscreen / maximize state not restored on Typora restart.
-          Allow scroll the side mega menu panel when zoomed under Windows.
-          Fix file contains some emojis are not detected as UTF-8 encode
-          Fix select lists items and toggle list type be applied on wrong blocks.
-          Fix typing on last line of code block may make the app hangs.
-          Fix adding anchor link to headings with “+” character not work correctly after export.
+          Fix
+            Fix window fullscreen / maximize state not restored on Typora restart.
+            Allow scroll the side mega menu panel when zoomed under Windows.
+            Fix file contains some emojis are not detected as UTF-8 encode
+            Fix select lists items and toggle list type be applied on wrong blocks.
+            Fix typing on last line of code block may make the app hangs.
+            Fix adding anchor link to headings with “+” character not work correctly after export.
+        </p>
       </description>
     </release>
     <release version="1.9.3" date="2024-06-21">
       <description>
-        New
-          Support gitlab style math code block.
-          Upgrade mermaid 10.9.1, Block Diagrams are now supported.
+        <p>
+          New
+            Support gitlab style math code block.
+            Upgrade mermaid 10.9.1, Block Diagrams are now supported.
 
-        Improvements
-          Follow CommonMark rule to handle whitespace inside code.
-          Improve scroll performance, improve performance on macOS 14.
-          Shorten file path in open recent menu.
-          “Inspect Element” on macOS moved from context menu to Sfarai Develop menu.
-          New file on file tree no longer need confirm after input its filename.
-          Add structured text code syntax highlight.
-          Chapter levels can be configured for ePub export.
-          Update languages in Polish, Traditional Chinese, Slovenian, Czech and Norwegian Nynorsk.
+          Improvements
+            Follow CommonMark rule to handle whitespace inside code.
+            Improve scroll performance, improve performance on macOS 14.
+            Shorten file path in open recent menu.
+            “Inspect Element” on macOS moved from context menu to Sfarai Develop menu.
+            New file on file tree no longer need confirm after input its filename.
+            Add structured text code syntax highlight.
+            Chapter levels can be configured for ePub export.
+            Update languages in Polish, Traditional Chinese, Slovenian, Czech and Norwegian Nynorsk.
 
-        Fix
-          Fix Javascript XSS on mermaid and math.
-          Fix anchor id when export.
-          Fix bookmark for exported PDF cannot be shown in Adobe Reader.
-          Fix some remote images cannot be loaded on macOS.
-          Fix “&amp;” not displayed for file path contains “&amp;” In “recent files” menu on Windows / Linux.
-          Fix “$” in code language name leads to a wrong string.
-          Other bug fix.
+          Fix
+            Fix Javascript XSS on mermaid and math.
+            Fix anchor id when export.
+            Fix bookmark for exported PDF cannot be shown in Adobe Reader.
+            Fix some remote images cannot be loaded on macOS.
+            Fix “&amp;” not displayed for file path contains “&amp;” In “recent files” menu on Windows / Linux.
+            Fix “$” in code language name leads to a wrong string.
+            Other bug fix.
+        </p>
       </description>
     </release>
     <release version="1.8.9" date="2024-01-29">
       <description>
-        Fix search in preferences panel.
-        Fix install and export issue on Linux.
+        <p>
+          Fix search in preferences panel.
+          Fix install and export issue on Linux.
+        </p>
       </description>
     </release>
     <release version="1.8.6" date="2024-01-24">
       <description>
-        N/A
+        <p>
+          N/A
+        </p>
       </description>
     </release>
     <release version="1.8.5" date="2024-01-19">
       <description>
-        New
-          Add support for Github style alerts / callouts.
-          Add option to enable zoom with command or ctrl key and mouse wheel.
-          Upgrade mermaid library with XY charts support.
+        <p>
+          New
+            Add support for Github style alerts / callouts.
+            Add option to enable zoom with command or ctrl key and mouse wheel.
+            Upgrade mermaid library with XY charts support.
 
-        Improvements
-          Linux version now also support separate theme for light and dark mode.
-          Quicker way to add “New Markdown” menu item in Windows Explorer
-          Now, typora uses mermaid's own dark theme when rendering mermaid in dark mode.
-          Improve performance and stability.
-          Update translation for Spanish, French, Galician, Slovenian, Vietnamese and Chinese.
-          Add Norwegian Nynorsk language interface.
+          Improvements
+            Linux version now also support separate theme for light and dark mode.
+            Quicker way to add “New Markdown” menu item in Windows Explorer
+            Now, typora uses mermaid's own dark theme when rendering mermaid in dark mode.
+            Improve performance and stability.
+            Update translation for Spanish, French, Galician, Slovenian, Vietnamese and Chinese.
+            Add Norwegian Nynorsk language interface.
 
-        Bug Fix
-          Fix window position in multiple monitor.
-          Fix save as image for diagrams.
-          Hide “copy as HTML” for unsupported blocks.
-          Add “copy as HTML” support for mermaid diagrams.
-          Fix “PicList not found” error when using PicList to upload images.
-          Fix cursor misplaced when editing emoji.
-          Fix issues on image syntax parse and convert.
-          Other bug fix.
+          Bug Fix
+            Fix window position in multiple monitor.
+            Fix save as image for diagrams.
+            Hide “copy as HTML” for unsupported blocks.
+            Add “copy as HTML” support for mermaid diagrams.
+            Fix “PicList not found” error when using PicList to upload images.
+            Fix cursor misplaced when editing emoji.
+            Fix issues on image syntax parse and convert.
+            Other bug fix.
+        </p>
       </description>
     </release>
     <release version="1.7.6" date="2023-11-01">
       <description>
-        Fix "save as" logic on Windows / Linux.
-        Improve activation network for users in China mainland.
+        <p>
+          Fix "save as" logic on Windows / Linux.
+          Improve activation network for users in China mainland.
+        </p>
       </description>
     </release>
     <release version="1.7.5" date="2023-09-21">
       <description>
-        Fix code signing on macOS.
-        Fix security issues, including CVE-2023-4863.
-        Fix search in preferences panel.
+        <p>
+          Fix code signing on macOS.
+          Fix security issues, including CVE-2023-4863.
+          Fix search in preferences panel.
+        </p>
       </description>
     </release>
     <release version="1.7.4" date="2023-09-09">
       <description>
-        Fix search in preferences panel.
+        <p>
+          Fix search in preferences panel.
+        </p>
       </description>
     </release>
     <release version="1.7.3" date="2023-09-06">
       <description>
-        New
-          Upgrade mermaid to 10.3.1, supports Sankey diagrams and Quadrant Chart.
-          Add menu item to open outline popover (macOS) and Wordcount popover.
-          Larger scrollbar when hover on Windows/ Linux.
-          Add Modelica language syntax support.
-          Add delete diagram option in context menu.
-          Add options to not save recent folders / files.
-          Add buttons to pin and remove recent folders from sidebar panel.
-          Add variable ${outputFolder} and ${outputFolderName}
+        <p>
+          New
+            Upgrade mermaid to 10.3.1, supports Sankey diagrams and Quadrant Chart.
+            Add menu item to open outline popover (macOS) and Wordcount popover.
+            Larger scrollbar when hover on Windows/ Linux.
+            Add Modelica language syntax support.
+            Add delete diagram option in context menu.
+            Add options to not save recent folders / files.
+            Add buttons to pin and remove recent folders from sidebar panel.
+            Add variable ${outputFolder} and ${outputFolderName}
 
-        Improvements and Fix
-          Better paste list from Apple Notes.
-          Improve open file with anchor locations.
-          Fix sort order not saved after restart Typora.
-          Header and footers now respect page margins when export to PDF.
-          Fix exporting ordered list when using theme Whitey.
-          typora-root-url now supports absolute image path on Windows.
-          Fix filename suggestion is improper when first heading is under editing.
-          Fix indent in code blocks not kept when paste into other web apps on macOS.
-          Non-exist #anchor links is now preserved.
-          Disable alert in embeded iframes.
-          Fix shortcut key for upload image cannot be set.
-          Fix drag files from file sidebar on some Linux distributions.
-          Fix app not responsive when do line-wise cut on empty line.
-          Fix some issues about cut line.
-          Fix indent issue when indent paragraph is enabled on macOS ≥ 13
-          Fix improper behavior when press shift + arrow key then press arrow key on macOS.
-          Fix typo of the menu item for Greek encoding option on Windows / Linux.
-          Fix code language autocomplete not work for ~~~.
-          Fix security issue STAR-2023-0062
-          Add menu item of “jump to line start”, fix Ctrl + A/E on macOS.
-          Add batch as alias of BAT in code language selector.
-          Fix some meta data on YAML not get read or applied on export.
-          Fix cursor jump after :emoji:.
-          Fix shift + down on task lists.
-          Fix checkbox style on macOS.
-          Fix anchor link related issues.
+          Improvements and Fix
+            Better paste list from Apple Notes.
+            Improve open file with anchor locations.
+            Fix sort order not saved after restart Typora.
+            Header and footers now respect page margins when export to PDF.
+            Fix exporting ordered list when using theme Whitey.
+            typora-root-url now supports absolute image path on Windows.
+            Fix filename suggestion is improper when first heading is under editing.
+            Fix indent in code blocks not kept when paste into other web apps on macOS.
+            Non-exist #anchor links is now preserved.
+            Disable alert in embeded iframes.
+            Fix shortcut key for upload image cannot be set.
+            Fix drag files from file sidebar on some Linux distributions.
+            Fix app not responsive when do line-wise cut on empty line.
+            Fix some issues about cut line.
+            Fix indent issue when indent paragraph is enabled on macOS ≥ 13
+            Fix improper behavior when press shift + arrow key then press arrow key on macOS.
+            Fix typo of the menu item for Greek encoding option on Windows / Linux.
+            Fix code language autocomplete not work for ~~~.
+            Fix security issue STAR-2023-0062
+            Add menu item of “jump to line start”, fix Ctrl + A/E on macOS.
+            Add batch as alias of BAT in code language selector.
+            Fix some meta data on YAML not get read or applied on export.
+            Fix cursor jump after :emoji:.
+            Fix shift + down on task lists.
+            Fix checkbox style on macOS.
+            Fix anchor link related issues.
+        </p>
       </description>
     </release>
     <release version="1.6.6" date="2023-05-22">
       <description>
-        Breaking Changes
-          The Windows version no longer support Windows 7, 8, 8.1.
+        <p>
+          Breaking Changes
+            The Windows version no longer support Windows 7, 8, 8.1.
 
-        Better Preferences Panel
-          Add "Files" section and retune Preferences Panel.
-          Add options to set default file extension.
-          Add options to control behavior when drop file or folder into Typora.
-          Add options to disable auto link.
-          Add options to set default code language when inserting code blocks.
-          Add options to auto apply last used code language when inserting code blocks.
+          Better Preferences Panel
+            Add "Files" section and retune Preferences Panel.
+            Add options to set default file extension.
+            Add options to control behavior when drop file or folder into Typora.
+            Add options to disable auto link.
+            Add options to set default code language when inserting code blocks.
+            Add options to auto apply last used code language when inserting code blocks.
 
-        Other New Features
-          Support Timeline for MermaidJS diagrams.
-          Add Thai Language UI.
-          Add PicList as an Image Uploader.
-          Add PEG.js syntax highlight support.
+          Other New Features
+            Support Timeline for MermaidJS diagrams.
+            Add Thai Language UI.
+            Add PicList as an Image Uploader.
+            Add PEG.js syntax highlight support.
 
-        Other Improvements
-          Fix CVE-2023-2317.
-          Fix CVE-2023-2316.
-          Avoid using google font mirrors in exported HTML, now official google font CDN is used.
-          using keyword["keyword"] sometimes causes node not rendered in Mermaid diagram.
-          color of typic package not readable in dark themes.
-          setting inline mermaid configs may also affect other mermaid blocks.
-          tasks status cannot be changed from menu bar when task list is under nested lists.
-          math block is always auto numbered in exported docx and related setting is ignored.
-          [Spec change] Typora now allow users to escape : mark to avoid input unwanted emoji codes.
+          Other Improvements
+            Fix CVE-2023-2317.
+            Fix CVE-2023-2316.
+            Avoid using google font mirrors in exported HTML, now official google font CDN is used.
+            using keyword["keyword"] sometimes causes node not rendered in Mermaid diagram.
+            color of typic package not readable in dark themes.
+            setting inline mermaid configs may also affect other mermaid blocks.
+            tasks status cannot be changed from menu bar when task list is under nested lists.
+            math block is always auto numbered in exported docx and related setting is ignored.
+            [Spec change] Typora now allow users to escape : mark to avoid input unwanted emoji codes.
+        </p>
       </description>
     </release>
     <release version="1.5.10" date="2023-03-24">
       <description>
-        Fix selection range after insert image.
-        Fix cursor when typing inside styled links.
-        Fix find again after switch docs.
-        Fix use command line typora aaa.md when aaa.md does not exists.
-        Fix garbled path under open recent menu.
-        Fix PDF export contains page break div.
+        <p>
+          Fix selection range after insert image.
+          Fix cursor when typing inside styled links.
+          Fix find again after switch docs.
+          Fix use command line typora aaa.md when aaa.md does not exists.
+          Fix garbled path under open recent menu.
+          Fix PDF export contains page break div.
+        </p>
       </description>
     </release>
     <release version="1.5.9" date="2023-03-14">
       <description>
-        Add option to switch Shift+Tab behavior between outdent and auto indent inside code blocks.
-        Add menu and context menu to copy all code contents.
-        Add menu and context menu to auto indent code contents.
-        Fix sort in file tree not saved.
-        Fix compatibility issue with Pandoc 3.0
-        Other bug fixes.
+        <p>
+          Add option to switch Shift+Tab behavior between outdent and auto indent inside code blocks.
+          Add menu and context menu to copy all code contents.
+          Add menu and context menu to auto indent code contents.
+          Fix sort in file tree not saved.
+          Fix compatibility issue with Pandoc 3.0
+          Other bug fixes.
+        </p>
       </description>
     </release>
     <release version="1.5.8" date="2023-02-15">
       <description>
-        Fix the behavior of opening folder in Typora.
-        Fix create new file in file tree.
-        Fix footer and header for exported PDF.
-        Other bug fix.
+        <p>
+          Fix the behavior of opening folder in Typora.
+          Fix create new file in file tree.
+          Fix footer and header for exported PDF.
+          Other bug fix.
+        </p>
       </description>
     </release>
     <release version="1.5.6" date="2023-02-09">
       <description>
-        Small bug fix.
+        <p>
+          Small bug fix.
+        </p>
       </description>
     </release>
     <release version="1.5.5" date="2023-02-06">
       <description>
-        Code Block / Source Code Mode
-          Add yara code syntax highlight.
-          Add svelte code syntax highlight.
-          Improve syntax highlight for SQL.
-          Fix input in language input of code blocks when using IME.
-          Fix cut not save data to clipboard when on text is selected but line wise copy cut is enabled.
-          Shift + Tab will outdent selected contents in code block and source code mode.
-          Recognize the end of code blocks in markdown source code mode.
-          Improve syntax highlight of links in markdown source code mode.
-          Fix continuous list when press Enter key in source code mode.
+        <p>
+          Code Block / Source Code Mode
+            Add yara code syntax highlight.
+            Add svelte code syntax highlight.
+            Improve syntax highlight for SQL.
+            Fix input in language input of code blocks when using IME.
+            Fix cut not save data to clipboard when on text is selected but line wise copy cut is enabled.
+            Shift + Tab will outdent selected contents in code block and source code mode.
+            Recognize the end of code blocks in markdown source code mode.
+            Improve syntax highlight of links in markdown source code mode.
+            Fix continuous list when press Enter key in source code mode.
 
-        Code Block / Source Code Mode
-          Upgrade mermaid version to 9.2 which brings bug fix and Mindmaps
+          Code Block / Source Code Mode
+            Upgrade mermaid version to 9.2 which brings bug fix and Mindmaps
 
-        UI / UX
-          Change some button labels.
-          Images supports float in custom CSS.
-          Fix wrong scroll on code blocks when clicking global search result.
-          Fix word break for code in outlines.
-          In list list view, #test in file summary will be treated as normal text or heading texts, depends on the option of “Strict Mode” for markdown parsing rules in preferences panel.
-          Fix global search not correctly highlight text in table.
-          Fix create new tab may cause Typora window loose focus on macOS
+          UI / UX
+            Change some button labels.
+            Images supports float in custom CSS.
+            Fix wrong scroll on code blocks when clicking global search result.
+            Fix word break for code in outlines.
+            In list list view, #test in file summary will be treated as normal text or heading texts, depends on the option of “Strict Mode” for markdown parsing rules in preferences panel.
+            Fix global search not correctly highlight text in table.
+            Fix create new tab may cause Typora window loose focus on macOS
 
-        Import / Export
-          Image export now support quantity options.
-          Use local font, instead of remote font when exporting PDF.
-          Highlight is supported and converted when export to LaTeX.
-          Improve spacing in lists when export to PDF or images.
-          Follow Pandoc’s way to export task list when target is docx, out, or rtf.
-          Generate more readable title for Epub export.
+          Import / Export
+            Image export now support quantity options.
+            Use local font, instead of remote font when exporting PDF.
+            Highlight is supported and converted when export to LaTeX.
+            Improve spacing in lists when export to PDF or images.
+            Follow Pandoc’s way to export task list when target is docx, out, or rtf.
+            Generate more readable title for Epub export.
 
-        Editing
-          Allow open local file link contains “#” in file path.
-          Improve paste results from Google Docs.
-          HTML entities are now case sensitive.
+          Editing
+            Allow open local file link contains “#” in file path.
+            Improve paste results from Google Docs.
+            HTML entities are now case sensitive.
 
-        Windows
-          This version supports Windows 7 again. Now Typora subscribe to different update channel on Windows 7 and newer Windows versions.
-          Link url starts like C:/ will also be recognized as absolute path, in previous versions, only path like D:\ will be treated as absolute url on Windows.
-          Better restore icon for unibody style.
-          Fix loading images from WSL path and net drivers.
+          Windows
+            This version supports Windows 7 again. Now Typora subscribe to different update channel on Windows 7 and newer Windows versions.
+            Link url starts like C:/ will also be recognized as absolute path, in previous versions, only path like D:\ will be treated as absolute url on Windows.
+            Better restore icon for unibody style.
+            Fix loading images from WSL path and net drivers.
 
-        I18n
-          Add new UI language: Norwegian
-          Update language translation of Slovenian, Vietnamese, Chinese.
+          I18n
+            Add new UI language: Norwegian
+            Update language translation of Slovenian, Vietnamese, Chinese.
 
-        Others
-          Update description message for deb package.
-          Other bug fix.
+          Others
+            Update description message for deb package.
+            Other bug fix.
+        </p>
       </description>
     </release>
     <release version="1.4.8" date="2022-10-11">
       <description>
-        Fix open Folder.
-        Fix issues about page break for PDF export.
+        <p>
+          Fix open Folder.
+          Fix issues about page break for PDF export.
+        </p>
       </description>
     </release>
     <release version="1.4.6" date="2022-09-11">
       <description>
-        Fix save file dialog not show for snap and flathub package.
+        <p>
+          Fix save file dialog not show for snap and flathub package.
+        </p>
       </description>
     </release>
     <release version="1.4.4" date="2022-09-05">
       <description>
-        Fix scroll for code block not displayed in some cases.
+        <p>
+          Fix scroll for code block not displayed in some cases.
+        </p>
       </description>
     </release>
     <release version="1.4.3" date="2022-09-05">
       <description>
-        New
-          Upgrade mermaid version. Support inline mermaid configs.
-          Upgrade mathjax version.
-          Add copy as image option for math and diagrams.
-          Add option to mix files and folders when sorting in file tree.
-          Add sort by creation time option for file tree / file list.
-          File tree view and file list view now is configured separately.
-          Increase max line count for global search results.
-          Fuzzy search in Open Quickly will now also match folder path.
-          Add new math auto numbering rule — AMS Numbering Rules (where only certain environments produce numbered equations, as they would be in LaTeX).
-          Add option to always add “./” when generating relative path for images.
-          Add rename image in context menu. (Which is the same menu item with move images).
-          Improve Pascal lang support, add more keyword highlight for Pascal.
-          Add syntax support for Smarty.
-          Improve performance when using find function and prevent hangs.
-          Make search result more readable compared to ==highlight== texts.
-          Increase max col count in table edit UI.
-          Recognize .qmd as markdown file.
-          Now user can select multiple cols and apply text align from table tool tip all at once.
-        Fix
-          Fix bugs about switching files.
-          Fix triple click on code block.
-          Fix code block height not auto changed when enter or exit fullscreen mode on macOS.
-          Make font color of completed task more readable in dark themes
-          Fix some rendering issue for mermaidjs.
-          Remove unnecessary horizontal scroll bar on side bar.
-          Fix undo deleted file not displayed in file tree view.
-          Fix error when switch files.
-          Fix hint behavior when hover on folders of sidebar menu.
-          Use smaller margin between math block and normal paragraphs.
-          Fix compatibility issues when search with Tai.
-          PDF export now supports headers or footers contains non-ASSIC code when export.
-          Improve image export quantity.
-          Fix PDF export not working on Windows when user account contains special characters.
-          Fix epub export show warnings in epub reader when contains video tag
-          Fix page size setting of PDF not working on macOS when export.
-          Fix the setting of margin right and margin left of PDF not correctly applied when export.
-          Fix last export path not saved on macOS.
-          Fix docx import fail on newer pandoc versions.
-          Fix replace may ignore search results matches with regular expressions contains non-capture groups.
-          Fix move images not working for windows.
-          Improve performance when md file contains video tag.
-          Fix a caret jump issue when typing after inline math.
-          Fix minor issues with spellcheck.
-          Fix load image with src contains escaped @ mark.
-          Fix save-as sometimes not popped up on diagrams.
-          Update language translations.
+        <p>
+          New
+            Upgrade mermaid version. Support inline mermaid configs.
+            Upgrade mathjax version.
+            Add copy as image option for math and diagrams.
+            Add option to mix files and folders when sorting in file tree.
+            Add sort by creation time option for file tree / file list.
+            File tree view and file list view now is configured separately.
+            Increase max line count for global search results.
+            Fuzzy search in Open Quickly will now also match folder path.
+            Add new math auto numbering rule — AMS Numbering Rules (where only certain environments produce numbered equations, as they would be in LaTeX).
+            Add option to always add “./” when generating relative path for images.
+            Add rename image in context menu. (Which is the same menu item with move images).
+            Improve Pascal lang support, add more keyword highlight for Pascal.
+            Add syntax support for Smarty.
+            Improve performance when using find function and prevent hangs.
+            Make search result more readable compared to ==highlight== texts.
+            Increase max col count in table edit UI.
+            Recognize .qmd as markdown file.
+            Now user can select multiple cols and apply text align from table tool tip all at once.
+          Fix
+            Fix bugs about switching files.
+            Fix triple click on code block.
+            Fix code block height not auto changed when enter or exit fullscreen mode on macOS.
+            Make font color of completed task more readable in dark themes
+            Fix some rendering issue for mermaidjs.
+            Remove unnecessary horizontal scroll bar on side bar.
+            Fix undo deleted file not displayed in file tree view.
+            Fix error when switch files.
+            Fix hint behavior when hover on folders of sidebar menu.
+            Use smaller margin between math block and normal paragraphs.
+            Fix compatibility issues when search with Tai.
+            PDF export now supports headers or footers contains non-ASSIC code when export.
+            Improve image export quantity.
+            Fix PDF export not working on Windows when user account contains special characters.
+            Fix epub export show warnings in epub reader when contains video tag
+            Fix page size setting of PDF not working on macOS when export.
+            Fix the setting of margin right and margin left of PDF not correctly applied when export.
+            Fix last export path not saved on macOS.
+            Fix docx import fail on newer pandoc versions.
+            Fix replace may ignore search results matches with regular expressions contains non-capture groups.
+            Fix move images not working for windows.
+            Improve performance when md file contains video tag.
+            Fix a caret jump issue when typing after inline math.
+            Fix minor issues with spellcheck.
+            Fix load image with src contains escaped @ mark.
+            Fix save-as sometimes not popped up on diagrams.
+            Update language translations.
+        </p>
       </description>
     </release>
     <release version="1.3.6" date="2022-06-12">
       <description>
-        New / Improvements
-          Support copy / move / download all images.
-          Add advanced copy / paste action in context menu.
-          Support regular expression in file search, find and replace.
-          Show match counts in find and replace panel.
-          Support auto move image folder when move or rename current opened markdown document.
-          Support ${currentFolder} as export command variable.
-          Add Hindi language support.
-        Fix
-          Fix window content not displayed under macOS ventura.
-          Update translations for Chinese, Polish, Slovenian, Spanish, Arabic, Indonesian, Portuguese, etc.
-          Update image and math for replace operation, fix search with html entities.
-          Fix learned word not kept in some cases (Window / Linux).
-          Support abbreviation like (e.g.) is always marked as misspelled in Window / Linux.
-          Reduce laggy when editing file with large set of math expressions.
-          Do not auto capitalize words after and inside inline math.
-          Fix some bugs about text selection.
-          Fix poster support for video element.
-          Fix live rendering for footnote.
-          Fix parsing rules about hr in lists.
-          Fix copy table header may include control elements.
-          Fix display issue for code block line number when window resize and export.
-          Fix issues about open links to other file with anchor position.
-          Fix select line at first char of line.
-          Keep unicode quote when import.
-          Fix context menu for code fences.
-          Fix PDF export pay produce empty page as the last page.
-          Other bug fix and performance improvement
+        <p>
+          New / Improvements
+            Support copy / move / download all images.
+            Add advanced copy / paste action in context menu.
+            Support regular expression in file search, find and replace.
+            Show match counts in find and replace panel.
+            Support auto move image folder when move or rename current opened markdown document.
+            Support ${currentFolder} as export command variable.
+            Add Hindi language support.
+          Fix
+            Fix window content not displayed under macOS ventura.
+            Update translations for Chinese, Polish, Slovenian, Spanish, Arabic, Indonesian, Portuguese, etc.
+            Update image and math for replace operation, fix search with html entities.
+            Fix learned word not kept in some cases (Window / Linux).
+            Support abbreviation like (e.g.) is always marked as misspelled in Window / Linux.
+            Reduce laggy when editing file with large set of math expressions.
+            Do not auto capitalize words after and inside inline math.
+            Fix some bugs about text selection.
+            Fix poster support for video element.
+            Fix live rendering for footnote.
+            Fix parsing rules about hr in lists.
+            Fix copy table header may include control elements.
+            Fix display issue for code block line number when window resize and export.
+            Fix issues about open links to other file with anchor position.
+            Fix select line at first char of line.
+            Keep unicode quote when import.
+            Fix context menu for code fences.
+            Fix PDF export pay produce empty page as the last page.
+            Other bug fix and performance improvement
+        </p>
       </description>
     </release>
     <release version="1.2.4" date="2022-03-27">
       <description>
-        Fix unnecessary scroll for files with large set of images (macOS).
-        Fix sometimes image load fail when root path is set.
+        <p>
+          Fix unnecessary scroll for files with large set of images (macOS).
+          Fix sometimes image load fail when root path is set.
+        </p>
       </description>
     </release>
     <release version="1.2.3" date="2022-03-23">
       <description>
-        New / Improvements
-          Upgrade mermaid version
-          Support image move operation.
-          Support image delete operation.
-          Add new image uploader -- Picsee. (macOS)
-          Improve macOS performance when document contains large image set
-          Add option to reload all images, undo image copy operation will do remove the copied image file.
-          Add default shortcut for task list.
-          Add syntax highlight for `dart`, `python` and `sql`.
-          Added `py` as alias of `python`, `docker` as alias of `dockerfile` for code fences.
-          Improve utf8 encode detection on Windows / Linux..
-          Slightly improve context menu UI for Windows / Linux.
-          Update i18n translations.
-        Fix
-          Fix some typo at the welcome page.
-          Fix an issue that `title` not displayed for reference link.
-          Fix `reveal in sidebar` not working when global search is displayed.
-          Fix some issues relates to unnecessary scroll when code fences is involved.
-          Fix delete folder in sidebar throw permission errors on Windows.
-          Fix a bug that "Export in process" not hide when you cancel the export operation.
-          Other bug fixes.
+        <p>
+          New / Improvements
+            Upgrade mermaid version
+            Support image move operation.
+            Support image delete operation.
+            Add new image uploader -- Picsee. (macOS)
+            Improve macOS performance when document contains large image set
+            Add option to reload all images, undo image copy operation will do remove the copied image file.
+            Add default shortcut for task list.
+            Add syntax highlight for `dart`, `python` and `sql`.
+            Added `py` as alias of `python`, `docker` as alias of `dockerfile` for code fences.
+            Improve utf8 encode detection on Windows / Linux..
+            Slightly improve context menu UI for Windows / Linux.
+            Update i18n translations.
+          Fix
+            Fix some typo at the welcome page.
+            Fix an issue that `title` not displayed for reference link.
+            Fix `reveal in sidebar` not working when global search is displayed.
+            Fix some issues relates to unnecessary scroll when code fences is involved.
+            Fix delete folder in sidebar throw permission errors on Windows.
+            Fix a bug that "Export in process" not hide when you cancel the export operation.
+            Other bug fixes.
+        </p>
       </description>
     </release>
     <release version="1.1.5" date="2022-02-21">
       <description>
-        Fix issues when canceling a saving process.
-        Improve undo when auto save is enabled.
+        <p>
+          Fix issues when canceling a saving process.
+          Improve undo when auto save is enabled.
+        </p>
       </description>
     </release>
     <release version="1.1.4" date="2022-02-20">
       <description>
-        Fix display issue under languages including Indonesian, French, Catalan and Traditional Chinese.
+        <p>
+          Fix display issue under languages including Indonesian, French, Catalan and Traditional Chinese.
+        </p>
       </description>
     </release>
     <release version="1.1.3" date="2022-02-19">
       <description>
-        Fix
-          Fix a critical issue that some file cannot be opened.
-          Fix settings for epub cannot be shown in preferences panel.
+        <p>
+          Fix
+            Fix a critical issue that some file cannot be opened.
+            Fix settings for epub cannot be shown in preferences panel.
+        </p>
       </description>
     </release>
     <release version="1.1.2" date="2022-02-17">
       <description>
-        New / Improvements
-          Add Malay language support.
-          Add Slovenian language support.
-          Fix typo and update translations in other languages.
-          Allow create file when open non-exist file via command line.
-          Allow create file when open target link that does not have existing file.
-          Allow open other files' anchor position directly via file link.
-          More compact context menu under Windows / Linux.
-          Support copy / cut while line when nothing is selected.
-          Add option to disable or enable physics package.
-          Allow pasting markdown with Command-Option-Shift-V on macOS.
-          Support offline activation and provide web UI to manage used license code.
-          Sign Windows executables and installers.
-          Support default / theme font size for exported image.
-          Ensure downloaded image has image file extension.
-          Support loading local image files with user append hashes.
-        Fix
-          Fix security issue which may cause XSS.
-          Fix custom font size for exported image.
-          Fix multiple BOM be added when saving files with BOM header.
-          Fix copy as MathML not working for math block.
-          Fix math auto numbering get wrongly numbered labels.
-          Fix file tree UI under smaller customer font size.
-          Fix always on top cannot be turned off under macOS.
-          Fix image corrupted if your Typora is zoomed.
+        <p>
+          New / Improvements
+            Add Malay language support.
+            Add Slovenian language support.
+            Fix typo and update translations in other languages.
+            Allow create file when open non-exist file via command line.
+            Allow create file when open target link that does not have existing file.
+            Allow open other files' anchor position directly via file link.
+            More compact context menu under Windows / Linux.
+            Support copy / cut while line when nothing is selected.
+            Add option to disable or enable physics package.
+            Allow pasting markdown with Command-Option-Shift-V on macOS.
+            Support offline activation and provide web UI to manage used license code.
+            Sign Windows executables and installers.
+            Support default / theme font size for exported image.
+            Ensure downloaded image has image file extension.
+            Support loading local image files with user append hashes.
+          Fix
+            Fix security issue which may cause XSS.
+            Fix custom font size for exported image.
+            Fix multiple BOM be added when saving files with BOM header.
+            Fix copy as MathML not working for math block.
+            Fix math auto numbering get wrongly numbered labels.
+            Fix file tree UI under smaller customer font size.
+            Fix always on top cannot be turned off under macOS.
+            Fix image corrupted if your Typora is zoomed.
+        </p>
       </description>
     </release>
     <release version="1.0.4" date="2022-01-11">
       <description>
-        1. Fix check update failure.
+        <p>
+          Fix check update failure.
+        </p>
       </description>
     </release>
     <release version="1.0.3" date="2021-12-01">
       <description>
-        1. Add option to allow connect to activation server in China.
+        <p>
+          Add option to allow connect to activation server in China.
+        </p>
       </description>
     </release>
     <release version="1.0.2" date="2021-11-27">
       <description>
-        1. Fix activation process on some older macOS version.
-        2. Fix indent on lists.
+        <p>
+          Fix activation process on some older macOS version.
+          Fix indent on lists.
+        </p>
       </description>
     </release>
     <release version="1.0.0" date="2021-11-23">
       <description>
-        1. Support YAML front matters (0.8.5), LaTeX math (0.8.7), [toc] (0.9.2), many new code syntax highlights, subscript and superscript (0.9.6), underline (0.9.7), highlight (0.9.8.7), diagrams (0.9.9.7) , local file link (0.9.9.8.2), table editing (0.9.9.8.8), HTML (0.9.9.17), etc...
-        2. Improve editing user experience, support auto pair (0.9.8.7), smart punctuation (0.9.9.16).
-        3. Launched Theme Gallery (0.9.9.7.8) and Support Website.
-        4. Provide outline view (0.9.2), word count (0.9.5), focus mode and typewriter mode (0.9.9.6), dark themes (0.9.9.9.2).
-        5. Provide Typora in other languages (start from 0.9.9.11.2) and spellcheck support.
-        6. File management, including "Open Quickly" (0.9.9.0), file tree / list (0.9.9.10), options when launch (0.9.9.15), global search (0.9.9.20), etc.
-        7. Better image management, include supporting relative path (0.9.4), image copy-to (0.9.9.18) and upload operations (0.9.9.32).
-        8. More advanced export functions (0.10.6).
-        9. New design of preferences panel(0.9.9.27), new icon (0.10.6), and many new themes.
-        10. And much more...
+        <p>
+          Support YAML front matters (0.8.5), LaTeX math (0.8.7), [toc] (0.9.2), many new code syntax highlights, subscript and superscript (0.9.6), underline (0.9.7), highlight (0.9.8.7), diagrams (0.9.9.7) , local file link (0.9.9.8.2), table editing (0.9.9.8.8), HTML (0.9.9.17), etc...
+          Improve editing user experience, support auto pair (0.9.8.7), smart punctuation (0.9.9.16).
+          Launched Theme Gallery (0.9.9.7.8) and Support Website.
+          Provide outline view (0.9.2), word count (0.9.5), focus mode and typewriter mode (0.9.9.6), dark themes (0.9.9.9.2).
+          Provide Typora in other languages (start from 0.9.9.11.2) and spellcheck support.
+          File management, including "Open Quickly" (0.9.9.0), file tree / list (0.9.9.10), options when launch (0.9.9.15), global search (0.9.9.20), etc.
+          Better image management, include supporting relative path (0.9.4), image copy-to (0.9.9.18) and upload operations (0.9.9.32).
+          More advanced export functions (0.10.6).
+          New design of preferences panel(0.9.9.27), new icon (0.10.6), and many new themes.
+          And much more...
+        </p>
       </description>
     </release>
     <release version="0.11.18" date="2021-11-17">
       <description>
-        1. Add warnings when user try to edit file from backup location.
-        2. Line break should be rendered as whitespace when ignore line break is enabled.
-        3. Fix new file in tile tree will result to duplicate files.
-        4. Fix bug that table with tabs cannot be correct parsed.
-        5. Fix inline math preview issue.
-        6. Fix bug that users cannot jump from some internal links.
-        7. Fix some cursor issue.
-        8. Fix Greek language spellcheck on older Windows and Linux.
+        <p>
+          Add warnings when user try to edit file from backup location.
+          Line break should be rendered as whitespace when ignore line break is enabled.
+          Fix new file in tile tree will result to duplicate files.
+          Fix bug that table with tabs cannot be correct parsed.
+          Fix inline math preview issue.
+          Fix bug that users cannot jump from some internal links.
+          Fix some cursor issue.
+          Fix Greek language spellcheck on older Windows and Linux.
+        </p>
       </description>
     </release>
     <release version="0.11.16" date="2021-11-07">
       <description>
-        1. Fix keys not work in code block sometimes.
-        2. Fix some regression bugs.
-        3. Add basic syntax highlight for htaccess and improve js syntax highlight support.
-        4. Fix math label link not working when auto numbering is disabled.
-        5. Fix header after table not recognized correctly.
-        6. Add option to allow physics package to redefined `\div` macro in math.
-        7. Fix find and replace do not keep previous state in new search.
-        8. Fix sometimes that images using a same name when paste from web.
-        9. Fix file auto refresh not working.
-        10. Other bug fix and improvements.
+        <p>
+          Fix keys not work in code block sometimes.
+          Fix some regression bugs.
+          Add basic syntax highlight for htaccess and improve js syntax highlight support.
+          Fix math label link not working when auto numbering is disabled.
+          Fix header after table not recognized correctly.
+          Add option to allow physics package to redefined `\div` macro in math.
+          Fix find and replace do not keep previous state in new search.
+          Fix sometimes that images using a same name when paste from web.
+          Fix file auto refresh not working.
+          Other bug fix and improvements.
+        </p>
       </description>
     </release>
     <release version="0.11.15" date="2021-11-06">
       <description>
-        1. Add basic syntax highlight for htaccess and improve js syntax highlight support.
-        2. Fix math label link not working when auto numbering is disabled.
-        3. Fix header after table not recognized correctly.
-        4. Add option to allow physics package to redefined `\div` macro in math.
-        5. Fix find and replace do not keep previous state in new search.
-        6. Fix sometimes that images using a same name when paste from web.
-        7. Fix file auto refresh not working.
-        8. Other bug fix and improvements.
+        <p>
+          Add basic syntax highlight for htaccess and improve js syntax highlight support.
+          Fix math label link not working when auto numbering is disabled.
+          Fix header after table not recognized correctly.
+          Add option to allow physics package to redefined `\div` macro in math.
+          Fix find and replace do not keep previous state in new search.
+          Fix sometimes that images using a same name when paste from web.
+          Fix file auto refresh not working.
+          Other bug fix and improvements.
+        </p>
       </description>
     </release>
     <release version="0.11.14" date="2021-10-28">
       <description>
+        <p>
+          N/A
+        </p>
       </description>
     </release>
     <release version="0.11.13" date="2021-10-18">
       <description>
-        1. Fix error dialog when open multiple Typora instance.
-        2. Improve inline code parse rule.
-        3. Reduce lag when using IME.
-        4. Fix upload all images fail when image path are escaped.
-        5. Fix connections to resources from some https websites will fail.
-        6. Update i18n translations for Russian, Hungarian, Chinese and Polish.
-        7. Add option to allow physics package to redefine some TeX commands.
-        8. Other bug fix and improvements.
+        <p>
+          Fix error dialog when open multiple Typora instance.
+          Improve inline code parse rule.
+          Reduce lag when using IME.
+          Fix upload all images fail when image path are escaped.
+          Fix connections to resources from some https websites will fail.
+          Update i18n translations for Russian, Hungarian, Chinese and Polish.
+          Add option to allow physics package to redefine some TeX commands.
+          Other bug fix and improvements.
+        </p>
       </description>
     </release>
     <release version="0.11.12" date="2021-10-15">
       <description>
-        1. Improve inline code parse rule.
-        2. Reduce lag when using IME.
-        3. Fix upload all images fail when image path are escaped.
-        4. Fix connections to resources from some https websites will fail.
-        5. Update i18n translations for Russian, Hungarian, Chinese and Polish.
-        6. Add option to allow physics package to redefine some TeX commands.
-        7. Other bug fix and improvements.
+        <p>
+          Improve inline code parse rule.
+          Reduce lag when using IME.
+          Fix upload all images fail when image path are escaped.
+          Fix connections to resources from some https websites will fail.
+          Update i18n translations for Russian, Hungarian, Chinese and Polish.
+          Add option to allow physics package to redefine some TeX commands.
+          Other bug fix and improvements.
+        </p>
       </description>
     </release>
     <release version="0.11.8" date="2021-08-31">
       <description>
-        1. Fix strong not rendered in some cases.
-        2. Fix cursor jump in some cases.
+        <p>
+          Fix strong not rendered in some cases.
+          Fix cursor jump in some cases.
+        </p>
       </description>
     </release>
     <release version="0.11.7" date="2021-08-26">
       <description>
-        1. Fix issue on save.
-        2. Fix render issue on mermaid diagram.
-        3. Fix parsing issues about strong and emphasis.
+        <p>
+          Fix issue on save.
+          Fix render issue on mermaid diagram.
+          Fix parsing issues about strong and emphasis.
+        </p>
       </description>
     </release>
     <release version="0.11.6" date="2021-08-26">
       <description>
-        1. Fix issue on save.
-        2. Fix render issue on mermaid diagram.
-        3. Fix parsing issues about strong and emphasis.
+        <p>
+          Fix issue on save.
+          Fix render issue on mermaid diagram.
+          Fix parsing issues about strong and emphasis.
+        </p>
       </description>
     </release>
     <release version="0.11.5" date="2021-08-16">
       <description>
-        1. Fix sidebar keeps loading on Linux.
-        2. Fix editing bugs on links and math.
-        3. Fix math style in exported PDF.
-        4. Fix context menu not working on source code mode.
-        5. Add nim, solidity code syntax support.
-        6. Fix bug that cannot embed YouTube videos.
-        7. Fix copy content not copy images as configured.
-        8. Other bug fix.
+        <p>
+          Fix sidebar keeps loading on Linux.
+          Fix editing bugs on links and math.
+          Fix math style in exported PDF.
+          Fix context menu not working on source code mode.
+          Add nim, solidity code syntax support.
+          Fix bug that cannot embed YouTube videos.
+          Fix copy content not copy images as configured.
+          Other bug fix.
+        </p>
       </description>
     </release>
     <release version="0.11.2" date="2021-07-24">
       <description>
-        1. Fix issue about math editing.
-        2. Fix issue about copying image.
-        3. Fix issue about check updates.
+        <p>
+          Fix issue about math editing.
+          Fix issue about copying image.
+          Fix issue about check updates.
+        </p>
       </description>
     </release>
     <release version="0.11.1" date="2021-07-23">
       <description>
-        1. Added option to auto apply displaylines environment in math to support line break using \\.
-        2. Fix some bugs.
+        <p>
+          Added option to auto apply displaylines environment in math to support line break using \\.
+          Fix some bugs.
+        </p>
       </description>
     </release>
     <release version="0.11.0" date="2021-07-20">
       <description>
-        1. Add shortcut key info on context menu.
-        2. Fix background on Windows start menu tile.
-        3. On Windows unibody style, users can right click on menu icon or use `Alt` + `(E)dit`, `Alt` + `(P)aragraph`, `Alt` + `F(o)rmat`, etc key combinations to open main menu.
-        4. Add menu item to control whether to append final new line or not.
-        5. YAML Front matters now supports ending with three dots (…),
-        6. Code Fences now is better GFM / CommonMark compatible. You can put extra `` ` or `~` to warp code block which contains ``` or ~~~.
-        7. Typora now follows GFM / CommonMark to parse `1)` as ordered list.
-        8. Use GFM compatible tables, leading or trailing pipes are optional in table rows.
-        9. Export will now display warning if it succeeded but with warnings.
-        10. Upgrade to MathJax 3.2 for math faster and better math rendering.
-        11. Support TeX comands from cases, centernot, colortbl, empheq, gensymb, mathtools, textcomp, upgreek, braket, physics, xypic packages.
-        12. Upgrade flowchart version, which supports named branches.
-        13. Add Romanian interface.
-        14. Support undo when converting smart quotes / dashes when input.
-        15. Other bugs fix and improvements.
+        <p>
+          Add shortcut key info on context menu.
+          Fix background on Windows start menu tile.
+          On Windows unibody style, users can right click on menu icon or use `Alt` + `(E)dit`, `Alt` + `(P)aragraph`, `Alt` + `F(o)rmat`, etc key combinations to open main menu.
+          Add menu item to control whether to append final new line or not.
+          YAML Front matters now supports ending with three dots (…),
+          Code Fences now is better GFM / CommonMark compatible. You can put extra `` ` or `~` to warp code block which contains ``` or ~~~.
+          Typora now follows GFM / CommonMark to parse `1)` as ordered list.
+          Use GFM compatible tables, leading or trailing pipes are optional in table rows.
+          Export will now display warning if it succeeded but with warnings.
+          Upgrade to MathJax 3.2 for math faster and better math rendering.
+          Support TeX comands from cases, centernot, colortbl, empheq, gensymb, mathtools, textcomp, upgreek, braket, physics, xypic packages.
+          Upgrade flowchart version, which supports named branches.
+          Add Romanian interface.
+          Support undo when converting smart quotes / dashes when input.
+          Other bugs fix and improvements.
+        </p>
       </description>
     </release>
     <release version="0.10.11" date="2021-05-23">
       <description>
-        1. Fix issue about save file dialog.
+        <p>
+          Fix issue about save file dialog.
+        </p>
       </description>
     </release>
     <release version="0.10.10" date="2021-05-16">
       <description>
-        1. Fix issue about emoji autocomplete.
-        2. Fix rename issue on file sidebar.
-        3. Keep final newline if original file end with linebreak.
-        4. Fix the issue that may cause Typora window not showing up.
-        5. Other small fix.
+        <p>
+          Fix issue about emoji autocomplete.
+          Fix rename issue on file sidebar.
+          Keep final newline if original file end with linebreak.
+          Fix the issue that may cause Typora window not showing up.
+          Other small fix.
+        </p>
       </description>
     </release>
     <release version="0.10.9" date="2021-05-09">
       <description>
-        1. Fix bug for editing issue after images.
-        2. Fix bug that images get updated twice.
-        3. Update Brazilian, Polish, Catalan, and Portuguese translations.
-        4. Fix bug that math block cannot get delete.
-        5. Fix bug that ctrl + backspace may cause cursor gone.
-        6. Other small fix.
+        <p>
+          Fix bug for editing issue after images.
+          Fix bug that images get updated twice.
+          Update Brazilian, Polish, Catalan, and Portuguese translations.
+          Fix bug that math block cannot get delete.
+          Fix bug that ctrl + backspace may cause cursor gone.
+          Other small fix.
+        </p>
       </description>
     </release>
     <release version="0.10.7" date="2021-05-02">
       <description>
-        1. Fix small UI issues.
-        2. Fix text editing bug which may remove texts after link.
+        <p>
+          Fix small UI issues.
+          Fix text editing bug which may remove texts after link.
+        </p>
       </description>
     </release>
     <release version="0.10.6" date="2021-04-28">
       <description>
-        1. Fix print error.
-        2. Fix image auto upload.
+        <p>
+          Fix print error.
+          Fix image auto upload.
+        </p>
       </description>
     </release>
     <release version="0.10.4" date="2021-04-28">
       <description>
-        1. Fix cursor in inline math.
+        <p>
+          Fix cursor in inline math.
+        </p>
       </description>
     </release>
     <release version="0.10.3" date="2021-04-26">
       <description>
-         1. New Typora Icon.
-         2. Improve UI for context menu and fences code language auto complete.
-         3. Add Export options and enhance export functionality.
-         4. Support header, footer and page option for PDF export.
-         5. Support outline sidebar, custom contents and theme for HTML export.
-         6. Support custom font size and width for image export.
-         7. Support table with one row.
-         8. Auto adding table rows on tab key.
-         9. Add Hebrew interface by [Alon](https://github.com/RealA10N).
-        10. Support configs for diagrams.
-        11. Support anchor links to title with duplicated names.
-        12. Support installation without admin privilege.
-        13. Rename “Move to Trash” to “Delete” for easier understanding.
-        14. Other bugs fix and stability improvements.
+        <p>
+          New Typora Icon.
+          Improve UI for context menu and fences code language auto complete.
+          Add Export options and enhance export functionality.
+          Support header, footer and page option for PDF export.
+          Support outline sidebar, custom contents and theme for HTML export.
+          Support custom font size and width for image export.
+          Support table with one row.
+          Auto adding table rows on tab key.
+          Add Hebrew interface by [Alon](github.com/RealA10N).
+          Support configs for diagrams.
+          Support anchor links to title with duplicated names.
+          Support installation without admin privilege.
+          Rename “Move to Trash” to “Delete” for easier understanding.
+          Other bugs fix and stability improvements.
+        </p>
       </description>
     </release>
     <release version="0.9.98" date="2020-12-13">
       <description>
-        1. Fix regression bugs.
+        <p>
+          Fix regression bugs.
+        </p>
       </description>
     </release>
     <release version="0.9.97" date="2020-12-12">
       <description>
-        1. Add vlang and forth code syntax highlight.
-        2. Add “Properties” in context menu for file on Windows.
-        3. Improve markdown parse logic.
-        4. Improve UI and built-in themes.
-        5. Improve compatibility with IMEs.
-        6. Fix print may popup no printer available error.
-        7. Fix open link with escaped urls.
-        8. Fix some mermaid dialog bugs.
-        9. Other bug fix.
+        <p>
+          Add vlang and forth code syntax highlight.
+          Add “Properties” in context menu for file on Windows.
+          Improve markdown parse logic.
+          Improve UI and built-in themes.
+          Improve compatibility with IMEs.
+          Fix print may popup no printer available error.
+          Fix open link with escaped urls.
+          Fix some mermaid dialog bugs.
+          Other bug fix.
+        </p>
       </description>
     </release>
     <release version="0.9.96" date="2020-09-14">
       <description>
-        <p>release-0.9.96</p>
+        <p>
+          N/A
+        </p>
       </description>
     </release>
   </releases>
