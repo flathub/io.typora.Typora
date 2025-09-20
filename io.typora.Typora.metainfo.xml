@@ -58,6 +58,19 @@
   </provides>
 
   <releases>
+    <release version="1.12.1" date="2025-09-20">
+      <description>
+        <p>
+          Support for macOS 26 Tahoe
+            (macOS 26) Tahoe style icon with dark version and custom colors.
+            (macOS 26) Tahoe style menu.
+            (macOS 26) Fix ui compatibility for macOS 26.
+            (macOS 26) Remove “Window Style” option on macOS 26.
+          Re-add "share" action in editor context menu on macOS.
+          Other bug fixes.
+        </p>
+      </description>
+    </release>
     <release version="1.11.7" date="2025-08-31">
       <description>
         <p>

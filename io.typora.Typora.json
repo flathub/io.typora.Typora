@@ -71,16 +71,16 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://downloads.typora.io/linux/Typora-linux-x64-1.11.7.tar.gz",
-                    "sha256": "0778470ed992dd5d652f6c25d0cd8e560495280aa7ae6a7694f83aadbd6a07f9"
+                    "url": "https://downloads.typora.io/linux/Typora-linux-x64-1.12.1.tar.gz",
+                    "sha256": "3dfe7db145fa56e3930e6ea7f611a230ab4002aebbfea9c7f164dce0e8f1bd83"
                 },
                 {
                     "type": "archive",
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://downloads.typora.io/linux/Typora-linux-arm64-1.11.7.tar.gz",
-                    "sha256": "e43bc147acf3a60f108476735e63bd9ba756872184f67e81b0caec44d2c19d49"
+                    "url": "https://downloads.typora.io/linux/Typora-linux-arm64-1.12.1.tar.gz",
+                    "sha256": "49b4fa0865dbd73f5fe84ee8ab5b25bda4722fa7a1ee21e6e8e72eded32e09de"
                 },
                 {
                     "type": "script",
