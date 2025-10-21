@@ -58,6 +58,15 @@
   </provides>
 
   <releases>
+    <release version="1.12.2" date="2025-10-20">
+      <description>
+        <p>
+          Fix undo text typing only undo one character.
+          Fix text typing issues when inline math is disabled and legacy latex delimiter is enabled.
+          Fix trail remaining day counting issue on Windows / macOS.
+        </p>
+      </description>
+    </release>
     <release version="1.12.1" date="2025-09-20">
       <description>
         <p>
