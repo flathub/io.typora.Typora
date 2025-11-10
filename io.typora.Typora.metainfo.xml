@@ -58,6 +58,14 @@
   </provides>
 
   <releases>
+    <release version="1.12.3" date="2025-11-10">
+      <description>
+        <p>
+          Fix a security issue when export / print.
+          Fix mermaid kanban text wrapping.
+        </p>
+      </description>
+    </release>
     <release version="1.12.2" date="2025-10-20">
       <description>
         <p>
