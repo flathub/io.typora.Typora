@@ -58,6 +58,13 @@
   </provides>
 
   <releases>
+    <release version="1.12.4" date="2025-11-22">
+      <description>
+        <p>
+          Fix HTML styles when export to PDF.
+        </p>
+      </description>
+    </release>
     <release version="1.12.3" date="2025-11-10">
       <description>
         <p>
