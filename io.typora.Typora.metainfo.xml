@@ -59,6 +59,28 @@
   </provides>
 
   <releases>
+    <release version="1.13.2" date="2026-04-10">
+      <description>
+        <p>
+          New Features
+            MathJax v4 Upgrade. Line breaks (\\) now supported by default, added new TeX packages (begingroup, bboldx) and text-mode macros.
+            Mermaid 11.13.0 Update with new diagram types supported:
+              Venn Diagram
+              Ishikawa Diagram
+            Open in Typora extension for VS Code and Cursor — right-click any Markdown file to launch it in Typora.
+
+          Improvements
+            Changing Markdown settings no longer requires restarting — a reload button is provided instead.
+            Improved search performance and sidebar resize behavior.
+            Better syntax highlighting for Mermaid code blocks.
+            All PDF export features now enabled on macOS 26.2.
+            View switch between source code mode and hybrid editing mode preserves scroll position.
+            Added "Copy as Plain Text" in context menu.
+            "Send anonymous info" now disabled by default for new installations.
+            New UI language – Irish, and improved translations for other languages.
+        </p>
+      </description>
+    </release>
     <release version="1.12.4" date="2025-11-22">
       <description>
         <p>
