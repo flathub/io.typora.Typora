@@ -59,6 +59,13 @@
   </provides>
 
   <releases>
+    <release version="1.13.4" date="2026-04-15">
+      <description>
+        <p>
+          Fix list parsing rules.
+        </p>
+      </description>
+    </release>
     <release version="1.13.2" date="2026-04-10">
       <description>
         <p>
